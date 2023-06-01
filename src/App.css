@@ -1,42 +1,91 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  position: absolute;
+  left: 96px;
+  width: 130px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navBar {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 6rem;
+  background-color: #259DB7;
+  padding: 2.5rem;
+  min-width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navBar li {
+  padding: 0 1rem;
+  color: white;
+
 }
 
-.card {
-  padding: 2em;
+.navBar li:hover {
+  text-decoration: underline;
 }
 
-.read-the-docs {
-  color: #888;
+.main {
+  background-color: #004254;
+}
+
+.mainHomeTitle {
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 5.5rem 0;
+  color: white;
+}
+
+.mainHome {
+  margin: 0 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mainHome p {
+  max-width: 500px;
+  font-size: 1rem;
+  color: white;
+}
+
+.buttonMain {
+  margin: 2rem 1rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #004254;
+  border-radius: 5px 5px 5px 5px;
+  border-color: white;
+}
+
+.mainVideoButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonVideoContainer {
+  display: flex;
+  gap: 3rem;
+}
+
+.buttonVideo {
+  color: white;
+  font-weight: bold;  
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #04809A;
+  border: 2px solid #04809A;
+  border-radius: 8px;
 }
