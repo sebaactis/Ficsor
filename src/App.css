@@ -10,27 +10,32 @@
 .logo {
   position: absolute;
   left: 96px;
-  width: 130px;
+  width: 120px;
 }
 
-.navBar {
-  list-style: none;
+.navBarStyle {
+  padding: 1.2rem;
+  background-color: #04809A;
+}
+
+.navBarList {
   display: flex;
   justify-content: right;
   align-items: center;
-  margin-right: 6rem;
-  background-color: #259DB7;
-  padding: 2.5rem;
-  min-width: 100%;
+  margin-right: 5.5rem;
 }
 
-.navBar li {
-  padding: 0 1rem;
+.nav-item {
+  margin: 0 0.3rem;
+  font-weight: bold;
+}
+
+.nav-link {
   color: white;
-
 }
 
-.navBar li:hover {
+.nav-link:hover {
+  color: white;
   text-decoration: underline;
 }
 
