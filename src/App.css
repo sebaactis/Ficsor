@@ -1,96 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');  
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 .logo {
-  position: absolute;
-  left: 96px;
-  width: 120px;
+    width: 202px;
+    height: 111px;
+    min-width: 75px;
+}
+
+.togglerMenu {
+    border: 3px solid #004254;
+    border-radius: 10px;
 }
 
 .navBarStyle {
-  padding: 1.2rem;
-  background-color: #04809A;
+    padding: 15px 96px;
+    background-color: #04809a;
+    font-size: 1.1rem;
 }
 
 .navBarList {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  margin-right: 5.5rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 5.5rem;
 }
 
 .nav-item {
-  margin: 0 0.3rem;
-  font-weight: bold;
+    margin: 0 0.3rem;
+    font-weight: bold;
 }
 
 .nav-link {
-  color: white;
+    color: white;
 }
 
 .nav-link:hover {
-  color: white;
-  text-decoration: underline;
+    color: white;
+    text-decoration: underline;
 }
 
 .main {
-  background-color: #004254;
+    background-color: #004254;
 }
 
 .mainHomeTitle {
-  text-align: center;
-  font-size: 1.7rem;
-  padding: 5.5rem 0;
-  color: white;
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 5.5rem 0;
+    color: white;
 }
 
 .mainHome {
-  margin: 0 6rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    margin: 0 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .mainHome p {
-  max-width: 500px;
-  font-size: 1rem;
-  color: white;
+    max-width: 500px;
+    font-size: 1rem;
+    color: white;
 }
 
 .buttonMain {
-  margin: 2rem 1rem;
-  padding: 0.3rem 0.8rem;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #004254;
-  border-radius: 5px 5px 5px 5px;
-  border-color: white;
+    margin: 2rem 1rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #004254;
+    border-radius: 5px 5px 5px 5px;
+    border-color: white;
 }
 
 .mainVideoButtons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttonVideoContainer {
-  display: flex;
-  gap: 3rem;
+    display: flex;
+    gap: 3rem;
 }
 
 .buttonVideo {
-  color: white;
-  font-weight: bold;  
-  margin-top: 2rem;
-  padding: 0.5rem 1rem;
-  background-color: #04809A;
-  border: 2px solid #04809A;
-  border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: #04809a;
+    border: 2px solid #04809a;
+    border-radius: 8px;
 }
