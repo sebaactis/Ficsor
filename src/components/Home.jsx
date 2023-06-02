@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "./NavBar.jsx";
 import { VscColorMode } from "react-icons/vsc";
 
 const Home = () => {
@@ -40,6 +39,24 @@ const Home = () => {
                     </article>
                 </div>
             </section>
+
+            <section className="sectionFestival">
+                <h1 className="titleFestival"> Proxima edicion del festival </h1>
+                <article className="nextFestival">
+
+                    <video width="650" height="450" controls>
+                        <source src="movie.mp4" type="video/mp4" />
+                    </video>
+                    <div className="festivalDescription">
+                        <h1 className="festivalText"> ¡NOS ENCONTRAMOS <br></br>
+                            DE NUEVO EN SEPTIEMBRE!</h1>
+                        <button className="buttonDescription">
+                            MAS INFORMACION
+                        </button>
+                    </div>
+                </article>
+            </section>
+
         </>
     );
 };

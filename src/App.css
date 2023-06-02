@@ -100,3 +100,56 @@
     border: 2px solid #04809a;
     border-radius: 8px;
 }
+
+.sectionFestival {
+    background: linear-gradient(180deg, rgba(132, 0, 68, 0.744) 0%, rgba(0, 132, 158, 0.6) 100%);
+    padding-bottom: 5rem;
+}
+
+.titleFestival {
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.nextFestival {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nextFestival h1 {
+    text-align: start;
+}
+
+.festivalDescription {
+    width: 650px;
+    height: 85px;
+    background-color: #004254;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttonDescription {
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background-color: #04809a;
+    border: 2px solid #04809a;
+    border-radius: 8px;
+    margin-right: 2rem;
+}
+
+.festivalText {
+    font-size: 1.15rem;
+    color: white;
+    margin-left: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0.8rem;
+}
