@@ -5,23 +5,15 @@ const Home = () => {
     return (
         <>
             <section className="main">
-                <h1 className="mainHomeTitle">¿Que es el FicSor?</h1>
-                <div className="mainHome">
+                <h1 className="mainHomeTitle fw-bold">¿Qué es el FiCSor?</h1>
+
+                {/* <div className="mainHome">
                     <article>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, nulla exercitationem
-                            veritatis, ad, vel consectetur accusantium omnis quaerat consequuntur eligendi qui
-                            temporibus eos quos debitis unde mollitia ut! Vitae, omnis! Molestiae veritatis minima,
-                            dicta rerum in adipisci facere! Perferendis tempora maiores expedita hic non maxime
-                            blanditiis autem, sint deleniti impedit fugit laudantium praesentium, excepturi nemo
-                            provident nobis sit? Corporis, cupiditate. Dolores aliquam minus quasi incidunt quibusdam
-                            vitae laboriosam recusandae aspernatur amet voluptate dolor, voluptatibus consequuntur
-                            consectetur iure quidem rem qui esse quod voluptatum? Exercitationem neque repellat officia
-                            quidem iure totam! Iure possimus minima aspernatur quam quae atque odio error obcaecati.
-                            Delectus ullam eveniet omnis in natus? Voluptate veritatis saepe laborum earum eaque,
-                            perspiciatis officia ut aperiam quod hic ipsa laboriosam. Sapiente qui nemo facilis! Nam
-                            neque nobis quod odit nesciunt saepe est porro atque natus, cum repudiandae fugiat expedita,
-                            veniam deserunt animi aspernatur aperiam magni quas sequi aliquid quis maiores.
+                        <p className="fs-3">
+                            El FiCSor es el primer festival de cine pensado y organizado por personas sordas en
+                            Argentina, y la primera plataforma de exhibición de películas de temática sorda nacionales e
+                            internacionales en el país. Su objetivo es, a través del cine, defender y reconocer los
+                            derechos sociales, culturales y lingüísticos de la comunidad sorda.
                         </p>
                         <button className="buttonMain">aA</button>
                         <button className="buttonMain">
@@ -37,26 +29,53 @@ const Home = () => {
                             <button className="buttonVideo">Donaciones</button>
                         </div>
                     </article>
+                </div> */}
+
+                <div className="mainHome">
+                    <div className="row">
+                        <article className="col-md-12 col-lg-5">
+                            <p className="fs-3">
+                                El FiCSor es el primer festival de cine pensado y organizado por personas sordas en
+                                Argentina, y la primera plataforma de exhibición de películas de temática sorda
+                                nacionales e internacionales en el país. Su objetivo es, a través del cine, defender y
+                                reconocer los derechos sociales, culturales y lingüísticos de la comunidad sorda.
+                            </p>
+                            <button className="buttonMain">aA</button>
+                            <button className="buttonMain">
+                                <VscColorMode />
+                            </button>
+                        </article>
+                        <article className="mainVideoButtons col-md-12 col-lg-7">
+                            <div>
+                                <video width="650" height="450" controls>
+                                    <source src="movie.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                            <div className="buttonVideoContainer">
+                                <button className="buttonVideo">Convocatoria</button>
+                                <button className="buttonVideo">Donaciones</button>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </section>
 
             <section className="sectionFestival">
                 <h1 className="titleFestival"> Proxima edicion del festival </h1>
                 <article className="nextFestival">
-
                     <video width="650" height="450" controls>
                         <source src="movie.mp4" type="video/mp4" />
                     </video>
                     <div className="festivalDescription">
-                        <h1 className="festivalText"> ¡NOS ENCONTRAMOS <br></br>
-                            DE NUEVO EN SEPTIEMBRE!</h1>
-                        <button className="buttonDescription">
-                            MAS INFORMACION
-                        </button>
+                        <h1 className="festivalText">
+                            {" "}
+                            ¡NOS ENCONTRAMOS <br></br>
+                            DE NUEVO EN SEPTIEMBRE!
+                        </h1>
+                        <button className="buttonDescription">MAS INFORMACION</button>
                     </div>
                 </article>
             </section>
-
         </>
     );
 };

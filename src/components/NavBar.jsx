@@ -6,11 +6,11 @@ const NavBar = () => {
         <>
             <nav className="navBarStyle navbar navbar-expand-lg">
                 <div className="container-fluid">
-                    <a className="navbar-brand" id="logo" title="beastlogo" href="/">
+                    <a className="navbar-brand" id="logo" title="logo de ficsor" href="/">
                         <img className="logo" src="../src/assets/images/logo.png" alt="logo de FiCSor" />
                     </a>
                     <button
-                        className="navbar-toggler fs-1 togglerMenu"
+                        className="navbar-toggler fs-5 togglerMenu"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapsibleNavbar"
@@ -18,7 +18,7 @@ const NavBar = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                        <ul className="navbar-nav gap-3" id="navbar-nav">
+                        <ul className="navbar-nav gap-1" id="navbar-nav">
                             <li className="nav-item">
                                 <a className="nav-link" href="/">
                                     HOME

@@ -8,9 +8,7 @@
 }
 
 .logo {
-    width: 202px;
-    height: 111px;
-    min-width: 75px;
+    width: 120px;
 }
 
 .togglerMenu {
@@ -19,7 +17,7 @@
 }
 
 .navBarStyle {
-    padding: 15px 96px;
+    padding: 10px 30px;
     background-color: #04809a;
     font-size: 1.1rem;
 }
@@ -51,7 +49,7 @@
 
 .mainHomeTitle {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 2rem;
     padding: 5.5rem 0;
     color: white;
 }
@@ -115,7 +113,6 @@
     text-align: center;
 }
 
-
 .nextFestival {
     display: flex;
     flex-direction: column;
@@ -152,4 +149,22 @@
     font-weight: bold;
     text-align: center;
     margin-top: 0.8rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1270px) {
+    .logo {
+        width: 202px;
+    }
+
+    .navBarStyle {
+        padding: 15px 96px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .navBarStyle {
+        padding: 15px 50px;
+    }
 }
