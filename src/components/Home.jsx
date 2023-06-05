@@ -32,22 +32,24 @@ const Home = () => {
                 </div> */}
 
                 <div className="mainHome">
-                    <div className="row">
-                        <article className="col-md-12 col-lg-5">
-                            <p className="fs-3">
-                                El FiCSor es el primer festival de cine pensado y organizado por personas sordas en
-                                Argentina, y la primera plataforma de exhibición de películas de temática sorda
-                                nacionales e internacionales en el país. Su objetivo es, a través del cine, defender y
-                                reconocer los derechos sociales, culturales y lingüísticos de la comunidad sorda.
-                            </p>
+                    <div className="row gap-1 justify-content-center">
+                        <article className="col-lg-12 col-xl-4">
+                            <div className="pContainer">
+                                <p className="fs-3">
+                                    El FiCSor es el primer festival de cine pensado y organizado por personas sordas en
+                                    Argentina, y la primera plataforma de exhibición de películas de temática sorda
+                                    nacionales e internacionales en el país. Su objetivo es, a través del cine, defender
+                                    y reconocer los derechos sociales, culturales y lingüísticos de la comunidad sorda.
+                                </p>
+                            </div>
                             <button className="buttonMain">aA</button>
                             <button className="buttonMain">
                                 <VscColorMode />
                             </button>
                         </article>
-                        <article className="mainVideoButtons col-md-12 col-lg-7">
+                        <article className="mainVideoButtons col-lg-12 col-xl-7">
                             <div>
-                                <video width="650" height="450" controls>
+                                <video className="video1" controls>
                                     <source src="movie.mp4" type="video/mp4" />
                                 </video>
                             </div>

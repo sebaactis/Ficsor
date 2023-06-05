@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import NavBarMenu from "./NavBarMenu";
 
 const NavBar = () => {
     return (
@@ -18,38 +18,7 @@ const NavBar = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                        <ul className="navbar-nav gap-1" id="navbar-nav">
-                            <li className="nav-item">
-                                <a className="nav-link" href="/">
-                                    HOME
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/convocatoria">
-                                    CONVOCATORIA
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/noticias">
-                                    NOTICIAS
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/sobrenosotros">
-                                    SOBRE NOSOTROS
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/trayectoria">
-                                    TRAYECTORIA
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/contacto">
-                                    CONTACTO
-                                </a>
-                            </li>
-                        </ul>
+                        <NavBarMenu />
                     </div>
                 </div>
             </nav>
