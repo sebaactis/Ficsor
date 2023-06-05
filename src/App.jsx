@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider, BrowserRouter, Routes, Route } from "react-router-dom";
 /* import "./App.css"; */
 import "./scss/main.scss";
-import NavBar from "components/NavBar.jsx";
+import NavBar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
 import ErrorPage from "./components/ErrorPage.jsx";
 import Convocatoria from "./components/Convocatoria.jsx";
