@@ -1,37 +1,42 @@
-import Button from "react-bootstrap/Button";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from "react-bootstrap/Popover";
+import home from "../videos/Home.mp4"
+import convocatoria from "../videos/Convocatoria.mp4"
+import noticias from "../videos/Noticias.mp4"
+import sobreNosotros from "../videos/SobreNosotros.mp4"
+import trayectoria from "../videos/Trayectoria.mp4"
+import contacto from "../videos/Contacto.mp4"
 
 function NavBarMenu() {
     /** HACER UN ARRAY CON OBJETOS QUE CONTENGAN {title: titulo de menu, url: url del video} */
 
     const menuArray = [
         {   title: "HOME", 
-            url: "./src/videos/Home.mp4", 
+            url: home, 
             href: "/" },
         {
             title: "CONVOCATORIA",
-            url: "./src/videos/Convocatoria.mp4",
+            url: convocatoria,
             href: "/convocatoria",
         },
         {
             title: "NOTICIAS",
-            url: "./src/videos/Noticias.mp4",
+            url: noticias,
             href: "/noticias",
         },
         {
             title: "SOBRE NOSOTROS",
-            url: "./src/videos/SobreNosotros.mp4",
+            url: sobreNosotros,
             href: "/sobrenosotros",
         },
         {
             title: "TRAYECTORIA",
-            url: "./src/videos/Trayectoria.mp4",
+            url: trayectoria,
             href: "/trayectoria",
         },
         {
             title: "CONTACTO",
-            url: "./src/videos/Contacto.mp4",
+            url: contacto,
             href: "/contacto",
         },
     ];
