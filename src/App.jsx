@@ -1,14 +1,14 @@
 import { createBrowserRouter, RouterProvider, BrowserRouter, Routes, Route } from "react-router-dom";
 /* import "./App.css"; */
 import "./scss/main.scss";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-import ErrorPage from "./components/ErrorPage";
-import Convocatoria from "./components/Convocatoria";
-import Noticias from "./components/Noticias";
-import SobreNosotros from "./components/SobreNosotros";
-import Trayectoria from "./components/Trayectoria";
-import Contacto from "./components/Contacto";
+import NavBar from "components/NavBar.jsx";
+import Footer from "./components/Footer.jsx";
+import ErrorPage from "./components/ErrorPage.jsx";
+import Convocatoria from "./components/Convocatoria.jsx";
+import Noticias from "./components/Noticias.jsx";
+import SobreNosotros from "./components/SobreNosotros.jsx";
+import Trayectoria from "./components/Trayectoria.jsx";
+import Contacto from "./components/Contacto.jsx";
 import Home from "./components/Home.jsx";
 
 function App() {
