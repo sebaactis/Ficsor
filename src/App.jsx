@@ -9,7 +9,6 @@ import Noticias from "./components/Noticias";
 import SobreNosotros from "./components/SobreNosotros";
 import Trayectoria from "./components/Trayectoria";
 import Contacto from "./components/Contacto";
-
 import Home from "./components/Home.jsx";
 
 function App() {

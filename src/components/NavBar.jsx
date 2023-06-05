@@ -7,7 +7,7 @@ const NavBar = () => {
             <nav className="navBarStyle navbar navbar-expand-lg">
                 <div className="container-fluid">
                     <a className="navbar-brand" id="logo" title="logo de ficsor" href="/">
-                        <img className="logo" src="../src/assets/images/logo.png" alt="logo de FiCSor" />
+                        <img className="logo" src="./src/assets/images/logo.png" alt="logo de FiCSor" />
                     </a>
                     <button
                         className="navbar-toggler fs-5 togglerMenu"

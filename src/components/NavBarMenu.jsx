@@ -7,31 +7,31 @@ function NavBarMenu() {
 
     const menuArray = [
         {   title: "HOME", 
-            url: "src/videos/Home.mp4", 
+            url: "./src/videos/Home.mp4", 
             href: "/" },
         {
             title: "CONVOCATORIA",
-            url: "src/videos/Convocatoria.mp4",
+            url: "./src/videos/Convocatoria.mp4",
             href: "/convocatoria",
         },
         {
             title: "NOTICIAS",
-            url: "src/videos/Noticias.mp4",
+            url: "./src/videos/Noticias.mp4",
             href: "/noticias",
         },
         {
             title: "SOBRE NOSOTROS",
-            url: "src/videos/SobreNosotros.mp4",
+            url: "./src/videos/SobreNosotros.mp4",
             href: "/sobrenosotros",
         },
         {
             title: "TRAYECTORIA",
-            url: "src/videos/Trayectoria.mp4",
+            url: "./src/videos/Trayectoria.mp4",
             href: "/trayectoria",
         },
         {
             title: "CONTACTO",
-            url: "src/videos/Contacto.mp4",
+            url: "./src/videos/Contacto.mp4",
             href: "/contacto",
         },
     ];

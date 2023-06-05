@@ -1,6 +1,5 @@
 import React from "react";
 import { VscColorMode } from "react-icons/vsc";
-import { IoLogoInstagram } from "react-icons/io";
 
 const Home = () => {
     return (
@@ -59,13 +58,13 @@ const Home = () => {
                 <h1 className="text-center my-5 text-light fs-3 fw-bold">MANTENETE INFORMADO A TRAVES DE NUESTRAS REDES</h1>
                 <article className="row">
                     <div className="col-xs-12 col-sm-12 col-lg-4 d-flex justify-content-center justify-content-lg-end my-3">
-                        <a href="/"> <img className="iconSocial" src="../src/icons/facebook.png" alt="logoFacebook" /> </a>
+                        <a href="/"> <img className="iconSocial" src="./src/icons/facebook.png" alt="logoFacebook" /> </a>
                     </div>
                     <div className="col-xs-12 col-sm-12 col-lg-4 d-flex justify-content-center justify-content-lg-center my-3">
-                        <a href="/"> <img className="iconSocial" src="../src/icons/tiktok.png" alt="logoTiktok" /> </a>
+                        <a href="/"> <img className="iconSocial" src="./src/icons/tiktok.png" alt="logoTiktok" /> </a>
                     </div>
                     <div className="col-xs-12 col-sm-12 col-lg-4 d-flex justify-content-center justify-content-lg-start my-3">
-                        <a href="/"> <img className="iconSocial" src="../src/icons/instagram.png" alt="logoInstagram" /> </a>
+                        <a href="/"> <img className="iconSocial" src="./src/icons/instagram.png" alt="logoInstagram" /> </a>
                     </div>
                 </article>
             </section>
