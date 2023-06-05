@@ -1,5 +1,6 @@
 import React from "react";
 import NavBarMenu from "./NavBarMenu";
+import logo from "../assets/images/logo.png"
 
 const NavBar = () => {
     return (
@@ -7,7 +8,7 @@ const NavBar = () => {
             <nav className="navBarStyle navbar navbar-expand-lg">
                 <div className="container-fluid">
                     <a className="navbar-brand" id="logo" title="logo de ficsor" href="/">
-                        <img className="logo" src="./src/assets/images/logo.png" alt="logo de FiCSor" />
+                        <img className="logo" src={logo} alt="logo de FiCSor" />
                     </a>
                     <button
                         className="navbar-toggler fs-5 togglerMenu"
