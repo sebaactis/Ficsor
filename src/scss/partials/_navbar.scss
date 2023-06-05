@@ -1,0 +1,36 @@
+.navBarStyle {
+    padding: 10px 30px;
+    background-color: #04809a;
+    font-size: 1.1rem;
+
+    .container-fluid {
+        a {
+            .logo {
+                width: 120px;
+            }
+        }
+
+        .togglerMenu {
+            border: 3px solid #004254;
+            border-radius: 10px;
+        }
+
+        div {
+            ul {
+                .nav-item {
+                    margin: 0 0.3rem;
+                    font-weight: bold;
+
+                    .nav-link {
+                        color: white;
+                    }
+
+                    .nav-link:hover {
+                        color: white;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

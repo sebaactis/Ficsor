@@ -1,0 +1,142 @@
+.main {
+    background-color: #004254;
+
+    .mainHomeTitle {
+        text-align: center;
+        font-size: 2rem;
+        padding: 5.5rem 0;
+        color: white;
+    }
+
+    .mainHome {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        div {
+            article {
+                .pContainer {
+                    padding: 0 2rem;
+
+                    p {
+                        color: white;
+
+                    }
+                }
+
+                .buttonMain {
+                    margin: 2rem 1rem;
+                    padding: 0.3rem 0.8rem;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    color: #004254;
+                    border-radius: 5px 5px 5px 5px;
+                    border-color: white;
+                }
+            }
+
+            .mainVideoButtons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                div {
+                    .video1 {
+                        width: 100%;
+                        height: 432px;
+                        max-width: 732px;
+                    }
+
+                }
+
+                .buttonVideoContainer {
+                    display: flex;
+                    gap: 3rem;
+
+                    .buttonVideo {
+                        color: white;
+                        font-weight: bold;
+                        margin-top: 2rem;
+                        margin-bottom: 1.2rem;
+                        padding: 0.5rem 1rem;
+                        background-color: #04809a;
+                        border: 2px solid #04809a;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+.sectionFestival {
+    background: linear-gradient(180deg, rgba(132, 0, 68, 0.744) 0%, rgba(0, 132, 158, 0.6) 100%);
+    padding-bottom: 5rem;
+
+    .titleFestival {
+        color: white;
+        font-size: 1.5rem;
+        padding-top: 3rem;
+        padding-bottom: 0.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .nextFestival {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .video2 {
+            width: 100%;
+            height: 432px;
+            max-width: 732px;
+        }
+
+        .festivalDescription {
+            max-width: 732px;
+            width: 100%;
+            height: 85px;
+            background-color: #004254;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .festivalText {
+                font-size: 1.15rem;
+                color: white;
+                margin-left: 2rem;
+                font-weight: bold;
+                text-align: center;
+                margin-top: 0.8rem;
+            }
+
+            .buttonDescription {
+                color: white;
+                font-weight: bold;
+                padding: 0.5rem 1rem;
+                background-color: #04809a;
+                border: 2px solid #04809a;
+                border-radius: 8px;
+                margin-right: 2rem;
+            }
+        }
+    }
+}
+
+.redesContainer {
+    background-color: #004254;
+
+    .row {
+        div {
+            a {
+                .iconSocial {
+                    width: 4rem;
+                }
+            }
+        }
+    }
+}

@@ -6,30 +6,32 @@ function NavBarMenu() {
     /** HACER UN ARRAY CON OBJETOS QUE CONTENGAN {title: titulo de menu, url: url del video} */
 
     const menuArray = [
-        { title: "HOME", url: "https://drive.google.com/file/d/1hbB63Ehk5yc1YwuCg8XOkrt2lAJdHleR/preview", href: "/" },
+        {   title: "HOME", 
+            url: "src/videos/Home.mp4", 
+            href: "/" },
         {
             title: "CONVOCATORIA",
-            url: "https://drive.google.com/file/d/1hbB63Ehk5yc1YwuCg8XOkrt2lAJdHleR/preview",
+            url: "src/videos/Convocatoria.mp4",
             href: "/convocatoria",
         },
         {
             title: "NOTICIAS",
-            url: "https://drive.google.com/file/d/1hbB63Ehk5yc1YwuCg8XOkrt2lAJdHleR/preview",
+            url: "src/videos/Noticias.mp4",
             href: "/noticias",
         },
         {
             title: "SOBRE NOSOTROS",
-            url: "https://drive.google.com/file/d/1hbB63Ehk5yc1YwuCg8XOkrt2lAJdHleR/preview",
+            url: "src/videos/SobreNosotros.mp4",
             href: "/sobrenosotros",
         },
         {
             title: "TRAYECTORIA",
-            url: "https://drive.google.com/file/d/1hbB63Ehk5yc1YwuCg8XOkrt2lAJdHleR/preview",
+            url: "src/videos/Trayectoria.mp4",
             href: "/trayectoria",
         },
         {
             title: "CONTACTO",
-            url: "https://drive.google.com/file/d/1hbB63Ehk5yc1YwuCg8XOkrt2lAJdHleR/preview",
+            url: "src/videos/Contacto.mp4",
             href: "/contacto",
         },
     ];
@@ -46,7 +48,7 @@ function NavBarMenu() {
                         placement="bottom"
                         overlay={
                             <Popover id={menu.title}>
-                                <iframe src={menu.url} width="279" height="216" allow="autoplay"></iframe>
+                                <video src={menu.url} width="200" height="200" autoPlay></video>
                             </Popover>
                         }
                     >
