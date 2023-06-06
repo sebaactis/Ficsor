@@ -1,8 +1,10 @@
 import React from "react";
 import { VscColorMode } from "react-icons/vsc";
+import { FaCircle } from "react-icons/fa";
 import instagram from "../icons/instagram.png"
 import tiktok from "../icons/tiktok.png"
 import facebook from "../icons/facebook.png"
+import Carousel from 'react-bootstrap/Carousel';
 
 const Home = () => {
     return (
@@ -69,6 +71,55 @@ const Home = () => {
                     <div className="col-xs-12 col-sm-12 col-lg-4 d-flex justify-content-center justify-content-lg-start my-3">
                         <a href="/"> <img className="iconSocial" src={instagram} alt="logoInstagram" /> </a>
                     </div>
+                </article>
+            </section>
+
+            <section className="carouselSection p-5">
+                <h2 className="text-center text-white py-5 fw-bold">Titulo de seccion</h2>
+                <Carousel fade className="carousel">
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-40"
+                            src="https://pbs.twimg.com/media/CfyUC7uW8AEz7n6.jpg"
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <h3>First slide label</h3>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-40"
+                            src="https://pbs.twimg.com/media/CfyUC7uW8AEz7n6.jpg"
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <h3>Second slide label</h3>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-40"
+                            src="https://pbs.twimg.com/media/CfyUC7uW8AEz7n6.jpg"
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <h3>Third    slide label</h3>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+            </section>
+
+            <section className="avalesSection">
+                <h2 className="fs-3 text-center text-white fw-bold py-5">NUESTROS AVALES</h2>
+                <article className="d-flex justify-content-center align-items-center">
+                    <FaCircle className="fs-1 text-white mx-3"/>
+                    <FaCircle className="fs-1 text-white mx-3"/>
+                    <FaCircle className="fs-1 text-white mx-3"/>
+                    <FaCircle className="fs-1 text-white mx-3"/>
                 </article>
             </section>
         </>
