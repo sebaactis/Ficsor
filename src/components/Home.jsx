@@ -1,10 +1,11 @@
 import React from "react";
 import { VscColorMode } from "react-icons/vsc";
 import { FaCircle } from "react-icons/fa";
-import instagram from "../icons/instagram.png"
-import tiktok from "../icons/tiktok.png"
-import facebook from "../icons/facebook.png"
-import Carousel from 'react-bootstrap/Carousel';
+import instagram from "../icons/instagram.png";
+import tiktok from "../icons/tiktok.png";
+import facebook from "../icons/facebook.png";
+import Carousel from "react-bootstrap/Carousel";
+import Squares from "./Squares";
 
 const Home = () => {
     return (
@@ -21,21 +22,28 @@ const Home = () => {
                                     nacionales e internacionales en el país. Su objetivo es, a través del cine, defender
                                     y reconocer los derechos sociales, culturales y lingüísticos de la comunidad sorda.
                                 </p>
+                                <div className="d-flex gap-5">
+                                    <button className="buttonMain">
+                                        <span className="fs-4">A</span>
+                                        <span className="fs-1">A</span>
+                                    </button>
+                                    <button className="buttonMain fs-1">
+                                        <VscColorMode />
+                                    </button>
+                                </div>
                             </div>
-                            <button className="buttonMain">aA</button>
-                            <button className="buttonMain">
-                                <VscColorMode />
-                            </button>
                         </article>
                         <article className="mainVideoButtons col-lg-12 col-xl-7">
                             <div>
                                 <video className="video1" controls>
                                     <source src="../.." type="video/mp4" />
                                 </video>
-                            </div>
-                            <div className="buttonVideoContainer">
-                                <button className="buttonVideo">Convocatoria</button>
-                                <button className="buttonVideo">Donaciones</button>
+                                <div className="container px-2">
+                                    <div className="buttonVideoContainer justify-content-end">
+                                        <button className="convocatoriaBtn">CONVOCATORIA</button>
+                                        <button className="donacionesBtn">DONACIONES</button>
+                                    </div>
+                                </div>
                             </div>
                         </article>
                     </div>
@@ -43,33 +51,54 @@ const Home = () => {
             </section>
 
             <section className="sectionFestival">
-                <h1 className="titleFestival col-lg-12"> Proxima edicion del festival </h1>
-                <article className="nextFestival col-lg-12 col-xs-12">
-                    <video className="video2" controls>
-                        <source src="movie.mp4" type="video/mp4" />
-                    </video>
-                    <div className="festivalDescription col-lg-12 col-sm-12">
-                        <h1 className="festivalText">
-                            {" "}
-                            ¡NOS ENCONTRAMOS <br></br>
-                            DE NUEVO EN SEPTIEMBRE!
-                        </h1>
-                        <button className="buttonDescription">MAS INFORMACION</button>
+                <div className="pb-4 mb-3">
+                    <div className="pt-4 pb-5">
+                        <Squares />
                     </div>
-                </article>
+                    <div className="container py-5">
+                        <h1 className="titleFestival col-lg-12"> Proxima edicion del festival </h1>
+                        <article className="nextFestival col-lg-12 col-xs-12">
+                            <video className="video2" controls>
+                                <source src="movie.mp4" type="video/mp4" />
+                            </video>
+                            <div className="festivalDescription col-lg-12 col-sm-12">
+                                <h1 className="festivalText">
+                                    {" "}
+                                    ¡NOS ENCONTRAMOS <br></br>
+                                    DE NUEVO EN SEPTIEMBRE!
+                                </h1>
+                                <button className="buttonDescription">MAS INFORMACION</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div className="pb-5">
+                        <Squares />
+                    </div>
+                </div>
             </section>
 
             <section className="redesContainer d-flex flex-column justify-content-center">
-                <h1 className="text-center my-5 text-light fs-3 fw-bold">MANTENETE INFORMADO A TRAVES DE NUESTRAS REDES</h1>
+                <h1 className="text-center my-5 text-light fs-3 fw-bold">
+                    MANTENETE INFORMADO A TRAVES DE NUESTRAS REDES
+                </h1>
                 <article className="row">
                     <div className="col-xs-12 col-sm-12 col-lg-4 d-flex justify-content-center justify-content-lg-end my-3">
-                        <a href="/"> <img className="iconSocial" src={facebook} alt="logoFacebook" /> </a>
+                        <a href="/">
+                            {" "}
+                            <img className="iconSocial" src={facebook} alt="logoFacebook" />{" "}
+                        </a>
                     </div>
                     <div className="col-xs-12 col-sm-12 col-lg-4 d-flex justify-content-center justify-content-lg-center my-3">
-                        <a href="/"> <img className="iconSocial" src={tiktok} alt="logoTiktok" /> </a>
+                        <a href="/">
+                            {" "}
+                            <img className="iconSocial" src={tiktok} alt="logoTiktok" />{" "}
+                        </a>
                     </div>
                     <div className="col-xs-12 col-sm-12 col-lg-4 d-flex justify-content-center justify-content-lg-start my-3">
-                        <a href="/"> <img className="iconSocial" src={instagram} alt="logoInstagram" /> </a>
+                        <a href="/">
+                            {" "}
+                            <img className="iconSocial" src={instagram} alt="logoInstagram" />{" "}
+                        </a>
                     </div>
                 </article>
             </section>
@@ -106,7 +135,7 @@ const Home = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <h3>Third    slide label</h3>
+                            <h3>Third slide label</h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -116,10 +145,10 @@ const Home = () => {
             <section className="avalesSection">
                 <h2 className="fs-3 text-center text-white fw-bold py-5">NUESTROS AVALES</h2>
                 <article className="d-flex justify-content-center align-items-center">
-                    <FaCircle className="fs-1 text-white mx-3"/>
-                    <FaCircle className="fs-1 text-white mx-3"/>
-                    <FaCircle className="fs-1 text-white mx-3"/>
-                    <FaCircle className="fs-1 text-white mx-3"/>
+                    <FaCircle className="fs-1 text-white mx-3" />
+                    <FaCircle className="fs-1 text-white mx-3" />
+                    <FaCircle className="fs-1 text-white mx-3" />
+                    <FaCircle className="fs-1 text-white mx-3" />
                 </article>
             </section>
         </>
