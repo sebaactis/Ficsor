@@ -4,10 +4,16 @@ import { FaCircle } from "react-icons/fa";
 import instagram from "../icons/instagram.png";
 import tiktok from "../icons/tiktok.png";
 import facebook from "../icons/facebook.png";
-import Carousel from "react-bootstrap/Carousel";
 import Squares from "./Squares";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const Home = () => {
+
     return (
         <>
             <section className="main">
@@ -105,41 +111,18 @@ const Home = () => {
 
             <section className="carouselSection p-5">
                 <h2 className="text-center text-white py-5 fw-bold">Titulo de seccion</h2>
-                <Carousel fade className="carousel">
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-40"
-                            src="https://pbs.twimg.com/media/CfyUC7uW8AEz7n6.jpg"
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-40"
-                            src="https://pbs.twimg.com/media/CfyUC7uW8AEz7n6.jpg"
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-40"
-                            src="https://pbs.twimg.com/media/CfyUC7uW8AEz7n6.jpg"
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
+                <Swiper
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={40}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                >
+                    <SwiperSlide><img src="https://pbs.twimg.com/media/CfyUC7uW8AEz7n6.jpg" /></SwiperSlide>
+                    <SwiperSlide><img src="https://pbs.twimg.com/media/CfyUC7uW8AEz7n6.jpg" />  </SwiperSlide>
+                    <SwiperSlide><img src="https://pbs.twimg.com/media/CfyUC7uW8AEz7n6.jpg" />  </SwiperSlide>
+                    <SwiperSlide><img src="https://pbs.twimg.com/media/CfyUC7uW8AEz7n6.jpg" />  </SwiperSlide>
+                </Swiper>
             </section>
 
             <section className="avalesSection">

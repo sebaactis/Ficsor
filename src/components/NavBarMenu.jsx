@@ -6,7 +6,6 @@ import noticias from "../videos/Noticias.mp4"
 import sobreNosotros from "../videos/SobreNosotros.mp4"
 import trayectoria from "../videos/Trayectoria.mp4"
 import contacto from "../videos/Contacto.mp4"
-import { Link } from "react-router-dom";
 
 function NavBarMenu() {
     /** HACER UN ARRAY CON OBJETOS QUE CONTENGAN {title: titulo de menu, url: url del video} */
@@ -58,7 +57,9 @@ function NavBarMenu() {
                             </Popover>  
                         }
                     >
-                        <Link className="nav-link" to={menu.href}>{menu.title}</Link>
+                        <a className="nav-link" href={menu.href}>
+                            {menu.title}
+                        </a>
                     </OverlayTrigger>
                 </li>
             ))}

@@ -62,6 +62,7 @@
                         border: 2px solid $light-blue;
                         border-radius: 8px;
                     }
+
                     .convocatoriaBtn {
                         @extend .donacionesBtn;
                         color: $light-blue;
@@ -81,6 +82,7 @@
 
     .squareContainer {
         position: absolute;
+
         .square {
             background: $blue;
             color: $blue;
@@ -156,9 +158,21 @@
 .carouselSection {
     background-color: #04809a;
 
-    .carousel {
-        width: 50%;
+    .swiper {
+        max-width: 50%;
         margin: auto;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: white;
+        }
+
+        .swiper-pagination {
+
+           .swiper-pagination-bullet {
+            background-color: white;
+           }
+        }
     }
 }
 
