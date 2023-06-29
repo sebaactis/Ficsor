@@ -145,6 +145,8 @@
     background-color: #004254;
 
     .row {
+        max-width: 100%;
+
         div {
             a {
                 .iconSocial {
@@ -169,9 +171,9 @@
 
         .swiper-pagination {
 
-           .swiper-pagination-bullet {
-            background-color: white;
-           }
+            .swiper-pagination-bullet {
+                background-color: white;
+            }
         }
     }
 }
