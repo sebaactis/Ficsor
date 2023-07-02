@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 @import "./partials/reset";
 @import "./partials/variables";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
@@ -15,3 +14,4 @@
 @import "./mediasQueries/_navbar.scss";
 @import "./mediasQueries/_home.scss";
 @import "./mediasQueries/footer.scss";
+@import "./partials/general.scss";

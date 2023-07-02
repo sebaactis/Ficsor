@@ -1,19 +1,18 @@
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from "react-bootstrap/Popover";
-import home from "../videos/Home.mp4"
-import convocatoria from "../videos/Convocatoria.mp4"
-import noticias from "../videos/Noticias.mp4"
-import sobreNosotros from "../videos/SobreNosotros.mp4"
-import trayectoria from "../videos/Trayectoria.mp4"
-import contacto from "../videos/Contacto.mp4"
+import home from "../videos/Home.webm";
+import convocatoria from "../videos/Convocatoria.webm";
+import noticias from "../videos/Noticias.webm";
+import sobreNosotros from "../videos/SobreNosotros.webm";
+import trayectoria from "../videos/Trayectoria.webm";
+import contacto from "../videos/Contacto.webm";
+import { useAccContext } from "../context/AccContext";
 
 function NavBarMenu() {
-    /** HACER UN ARRAY CON OBJETOS QUE CONTENGAN {title: titulo de menu, url: url del video} */
+    const { incSize, sizeBtn } = useAccContext();
 
     const menuArray = [
-        {   title: "HOME", 
-            url: home, 
-            href: "/" },
+        { title: "HOME", url: home, href: "/" },
         {
             title: "CONVOCATORIA",
             url: convocatoria,
@@ -53,11 +52,11 @@ function NavBarMenu() {
                         placement="bottom"
                         overlay={
                             <Popover id={menu.title}>
-                                <video src={menu.url} width="200" height="200" autoPlay></video>
-                            </Popover>  
+                                <video className=".popoverVideo" src={menu.url} width="200" autoPlay></video>
+                            </Popover>
                         }
                     >
-                        <a className="nav-link" href={menu.href}>
+                        <a className={`nav-link ${incSize ? "fs-5" : ""}`} href={menu.href}>
                             {menu.title}
                         </a>
                     </OverlayTrigger>
