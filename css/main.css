@@ -26,6 +26,11 @@
   border: 3px solid #004254;
   border-radius: 10px;
 }
+.navBarStyle .container-fluid .togglerContrast {
+  border: 4px solid white;
+  color: white;
+  background-color: white;
+}
 .navBarStyle .container-fluid div ul .nav-item {
   margin: 0 0.3rem;
   font-weight: bold;
@@ -59,6 +64,7 @@
 }
 .main .mainHome div article .pContainer {
   padding: 0 2rem;
+  width: 100%;
 }
 .main .mainHome div article .pContainer p {
   color: white;
@@ -92,18 +98,9 @@
   height: 432px;
   max-width: 732px;
 }
-.main .mainHome div .mainVideoButtons .buttonVideoContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 3rem;
-}
 .main .mainHome div .mainVideoButtons .buttonVideoContainer .donacionesBtn, .main .mainHome div .mainVideoButtons .buttonVideoContainer .convocatoriaBtn {
   color: white;
   font-weight: bold;
-  margin-top: 2rem;
-  margin-bottom: 1.2rem;
-  padding: 0.7rem 2rem;
   background-color: #00849e;
   border: 2px solid #00849e;
   border-radius: 8px;
@@ -126,8 +123,8 @@
 .sectionFestival .squareContainer .square {
   background: #004254;
   color: #004254;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .sectionFestival .titleFestival {
   color: white;
@@ -150,31 +147,15 @@
 }
 .sectionFestival .nextFestival .video2 {
   width: 100%;
-  height: 432px;
-  max-width: 732px;
 }
 .sectionFestival .nextFestival .festivalDescription {
-  max-width: 732px;
-  width: 100%;
-  height: 85px;
   background-color: #004254;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .sectionFestival .nextFestival .festivalDescription .festivalText {
   font-size: 1.15rem;
   color: white;
-  margin-left: 2rem;
   font-weight: bold;
   text-align: center;
-  margin-top: 0.8rem;
 }
 .sectionFestival .nextFestival .festivalDescription .buttonDescription {
   color: white;
@@ -183,7 +164,6 @@
   background-color: #04809a;
   border: 2px solid #04809a;
   border-radius: 8px;
-  margin-right: 2rem;
 }
 
 .redesContainer {
@@ -200,8 +180,7 @@
   background-color: #04809a;
 }
 .carouselSection .swiper {
-  max-width: 50%;
-  margin: auto;
+  width: 100%;
 }
 .carouselSection .swiper .swiper-button-next,
 .carouselSection .swiper .swiper-button-prev {
@@ -253,6 +232,10 @@
   .redesContainer .row div a .iconSocial {
     width: 4.7rem;
   }
+  .square {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
 }
 @media (min-width: 900px) {
   .footer .logowhite {
@@ -268,4 +251,9 @@
 .buttonMainOn {
   -webkit-filter: invert(85%);
           filter: invert(85%);
+}
+
+.highContrast {
+  -webkit-filter: contrast(130%);
+          filter: contrast(130%);
 }/*# sourceMappingURL=main.css.map */
