@@ -22,3 +22,19 @@
         height: 2rem !important;
     }
 }
+
+@media (width <=768px) {
+    .main {
+        .mainHome {
+            div {
+                .mainVideoButtons {
+                    div {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

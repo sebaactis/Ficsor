@@ -34,21 +34,6 @@ const Home = () => {
                                     nacionales e internacionales en el país. Su objetivo es, a través del cine, defender
                                     y reconocer los derechos sociales, culturales y lingüísticos de la comunidad sorda.
                                 </p>
-                                {/* <div className="d-flex gap-5">
-                                    <button
-                                        className={` buttonMain ${incSize ? "buttonMainOn" : ""}`}
-                                        onClick={sizeBtn}
-                                    >
-                                        <span className="fs-4">A</span>
-                                        <span className="fs-1">A</span>
-                                    </button>
-                                    <button
-                                        className={` buttonMain fs-1 ${contrast ? "buttonMainOn" : ""}`}
-                                        onClick={contrastBtn}
-                                    >
-                                        <VscColorMode />
-                                    </button>
-                                </div> */}
                             </div>
                         </article>
                         <article className="mainVideoButtons col-lg-12 col-xl-7 px-0 ">
