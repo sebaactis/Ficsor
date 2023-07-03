@@ -11,7 +11,25 @@
         .container-fluid {
             a {
                 .logo {
-                    width: 202px; 
+                    width: 202px;
+                }
+            }
+        }
+    }
+}
+
+@media (width <=980px) {
+    .navBarStyle {
+        .container-fluid {
+            .navbar-collapse {
+                .navbar-nav {
+                    .videoNavBar {
+                        display: none;
+
+                        .popoverVideo {
+                            display: none;
+                        }
+                    }
                 }
             }
         }

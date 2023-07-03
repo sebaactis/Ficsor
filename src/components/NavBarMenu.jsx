@@ -52,9 +52,10 @@ function NavBarMenu() {
                         placement="bottom"
                         overlay={
                             <Popover id={menu.title}>
-                                <video className=".popoverVideo" src={menu.url} width="200" autoPlay></video>
+                                <video className="popoverVideo" src={menu.url} width="200" autoPlay></video>
                             </Popover>
                         }
+                        className="videoNavBar"
                     >
                         <a className={`nav-link ${incSize ? "fs-5" : ""}`} href={menu.href}>
                             {menu.title}
