@@ -2,9 +2,11 @@ import React from "react";
 import NavBarMenu from "./NavBarMenu";
 import logo from "../assets/images/logo.png";
 import { useAccContext } from "../context/AccContext";
+import { VscColorMode } from "react-icons/vsc";
 
 const NavBar = () => {
-    const { contrast, incSize } = useAccContext();
+
+    const { incSize, sizeBtn, contrast, contrastBtn } = useAccContext();
 
     return (
         <>
@@ -13,6 +15,21 @@ const NavBar = () => {
                     <a className="navbar-brand" id="logo" title="logo de ficsor" href="/">
                         <img className="logo" src={logo} alt="logo de FiCSor" />
                     </a>
+                    <div className="buttonsAcc d-flex gap-3">
+                        <button
+                            className={` buttonMain ${incSize ? "buttonMainOn" : ""}`}
+                            onClick={sizeBtn}
+                        >
+                            <span className="fs-5">A</span>
+                            <span className="fs-2">A</span>
+                        </button>
+                        <button
+                            className={` buttonMain fs-2 ${contrast ? "buttonMainOn" : ""}`}
+                            onClick={contrastBtn}
+                        >
+                            <VscColorMode />
+                        </button>
+                    </div>
                     <button
                         className={`
                         navbar-toggler togglerMenu 

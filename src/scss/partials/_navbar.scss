@@ -21,6 +21,20 @@
             background-color: white;
         }
 
+        .buttonsAcc {
+            margin-left: 8rem;
+
+            .buttonMain {
+                margin: 2rem 0;
+                padding: 0.3rem 1rem;
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: $blue;
+                border-radius: 10px;
+                border-color: white;
+            }
+        }
+
         div {
             ul {
                 .nav-item {
@@ -37,7 +51,7 @@
                     }
                 }
 
-                
+
             }
         }
     }

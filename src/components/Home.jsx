@@ -25,8 +25,8 @@ const Home = () => {
             <section className="main pb-3">
                 <h1 className={`mainHomeTitle fw-bold ${incSize ? "fs-1" : ""}`}>¿Qué es el FiCSor?</h1>
                 <div className="mainHome">
-                    <div className="row gap-1 justify-content-center w-100">
-                        <article className="col-lg-12 col-xl-4 ">
+                    <div className="row gap-1 justify-content-center">
+                        <article className="col-lg-12 col-xl-4">
                             <div className="pContainer ">
                                 <p className={` ${incSize ? "fs-3" : "fs-4"}`}>
                                     El FiCSor es el primer festival de cine pensado y organizado por personas sordas en
@@ -34,7 +34,7 @@ const Home = () => {
                                     nacionales e internacionales en el país. Su objetivo es, a través del cine, defender
                                     y reconocer los derechos sociales, culturales y lingüísticos de la comunidad sorda.
                                 </p>
-                                <div className="d-flex gap-5">
+                                {/* <div className="d-flex gap-5">
                                     <button
                                         className={` buttonMain ${incSize ? "buttonMainOn" : ""}`}
                                         onClick={sizeBtn}
@@ -48,16 +48,16 @@ const Home = () => {
                                     >
                                         <VscColorMode />
                                     </button>
-                                </div>
+                                </div> */}
                             </div>
                         </article>
                         <article className="mainVideoButtons col-lg-12 col-xl-7 px-0 ">
-                            <div className="container px-0">
+                            <div className="container">
                                 <video className="video1" controls>
                                     <source src="../.." type="video/mp4" />
                                 </video>
-                                <div className="container px-3 py-3">
-                                    <div className="buttonVideoContainer d-grid gap-5 d-sm-flex justify-content-sm-end ">
+                                <div className="container px-3 py-3 mx-1">
+                                    <div className="buttonVideoContainer d-grid gap-5 d-sm-flex justify-content-sm-center ">
                                         <button className={`convocatoriaBtn btn ${incSize ? "btn-lg" : ""}`}>
                                             CONVOCATORIA
                                         </button>
