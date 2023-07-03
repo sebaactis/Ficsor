@@ -17,3 +17,18 @@
         }
     }
 }
+
+@media (width <= 768px) {
+    .navBarStyle {
+        .container-fluid {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .buttonsAcc {
+                margin: 0;
+            }
+        }
+    }
+}
