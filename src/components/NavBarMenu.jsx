@@ -9,7 +9,7 @@ import contacto from "../videos/Contacto.webm";
 import { useAccContext } from "../context/AccContext";
 import { useMediaQuery } from "react-responsive";
 
-function NavBarMenu() {
+function NavBarMenu({ isNavBar }) {
     const { incSize, sizeBtn } = useAccContext();
     const isMobile = useMediaQuery({ query: "(max-width: 987px)" })
 
@@ -47,9 +47,9 @@ function NavBarMenu() {
 
 
 
-    if (isMobile) {
+    if (isMobile || !isNavBar) {
         return (
-            <ul className="navbar-nav gap-1" id="navbar-nav" >
+            <ul className="navbar-nav gap-1 navFooter" id="navbar-nav" >
                 {menuArray.map((menu) => (
 
                     <li className="nav-item" key={menu.title}>

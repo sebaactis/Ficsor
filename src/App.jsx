@@ -17,7 +17,7 @@ function App() {
     return (
         <BrowserRouter>
             <AccProvider>
-                <NavBar />
+                <NavBar isNavBar={true} />
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/convocatoria" element={<Convocatoria />} />

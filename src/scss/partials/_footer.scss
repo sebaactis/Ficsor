@@ -1,18 +1,72 @@
 .footer {
-    background-color: #673354;
+    background-color: #259DB7;
     padding: 3rem 0;
 
-    .buttonFooter {
-        color: white;
-        font-weight: bold;
-        padding: 0.5rem 1rem;
-        background-color: #04809a;
-        border: 2px solid #04809a;
-        border-radius: 8px;
-        margin-right: 2rem;
+    .d-flex {
+
+        .sectionLogo {
+            .logoContactDiv {
+                width: 30%;
+                margin-left: 200px;
+                gap: 2rem;
+
+                .logowhite {
+                    width: 170px
+                }
+
+                .logoContactoSpace {
+                    border-left: 2px white solid;
+                    margin-left: 10px;
+                    font-weight: bold;
+                    height: 60px;
+
+
+
+                    .contactoFooterTitle {
+                        margin-left: 10px;
+                        color: #ffd900;
+                    }
+
+                    .contactoFooterMail {
+                        margin-left: 10px;
+                        color: white;
+                    }
+                }
+
+
+            }
+        }
+
+        .buttonFooter {
+            color: white;
+            font-weight: bold;
+            padding: 1.5rem 3rem;
+            background-color: #04809a;
+            border: 2px solid #04809a;
+            border-radius: 8px;
+            margin-right: 15rem;
+        }
+
+
+        .navFooterDiv {
+            nav {
+                background-color: #259DB7 !important;
+                padding: 0;
+
+                .container-fluid {
+                    div {
+                        .navFooter {
+                            display: flex;
+                            flex-direction: column;
+                            border-left: 2px white solid;
+                            font-size: 0.9rem;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
-    .logowhite {
-        width: 120px
-    }
 }
