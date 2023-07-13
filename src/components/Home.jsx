@@ -23,8 +23,8 @@ const Home = () => {
         <main>
             <section className="main pb-3">
                 <div className="mainHome">
-                    <div className="d-flex justify-content-around">
-                        <article className="col-lg-6 col-xl-6">
+                    <div className="row d-flex justify-content-around">
+                        <article className="col-lg-6 col-xl-6 col-md-12 col-xs-12">
                             <div className="pContainer ">
                                 <h1 className={`mainHomeTitle fw-bold ${incSize ? "fs-1" : ""}`}>¿Qué es el FiCSor?</h1>
                                 <p className={` ${incSize ? "fs-4" : "fs-5"}`}>
@@ -35,12 +35,12 @@ const Home = () => {
                                 </p>
                             </div>
                         </article>
-                        <article className="mainVideoButtons col-lg-6 col-xl-6 px-0">
+                        <article className="mainVideoButtons col-lg-6 col-xl-6 col-md-12 col-xs-12 px-0">
                             <div className="container">
                                 <video className="video1" controls>
                                     <source src="../.." type="video/mp4" />
                                 </video>
-                                <div className="container px-3 py-3 mx-1">
+                                <div className="container buttonsDiv">
                                     <div className="buttonVideoContainer d-grid gap-5 d-sm-flex justify-content-sm-center ">
                                         <button className={`convocatoriaBtn btn ${incSize ? "btn-lg" : ""}`}>
                                             CONVOCATORIA

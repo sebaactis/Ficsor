@@ -30,13 +30,22 @@
     }
 }
 
-@media (width <=768px) {
+@media (width <= 768px) {
     .main {
         .mainHome {
             div {
                 .mainVideoButtons {
-                    div {
-                        margin: 0;
+                    .container {
+
+                        max-width: 100%;
+
+                        .video1 {
+                            width: 20rem;
+                        }
+
+                        .buttonsDiv {
+                            
+                        }
                     }
                 }
             }

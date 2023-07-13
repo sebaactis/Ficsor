@@ -5,7 +5,7 @@
     .mainHome {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;        
 
         div {
             article {
@@ -49,6 +49,10 @@
                         height: 27rem;
                         width: 100%;
                         max-width: 48rem;
+                    }
+
+                    .buttonsDiv {
+                        padding: 2rem;
                     }
 
                 }

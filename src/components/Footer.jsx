@@ -7,7 +7,7 @@ const Footer = () => {
     const { incSize, sizeBtn } = useAccContext();
     return (
         <footer className="footer">
-            <div className="d-flex justify-content-between align-items-center">
+            <div className="footerDiv">
                 <section className="d-flex sectionLogo">
                     <div className="logoContactDiv d-flex flex-column justify-content-center">
                         <img className="logowhite" src={logowhite} alt="logo ficsor blanco" />
