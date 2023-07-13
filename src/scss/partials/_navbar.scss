@@ -21,20 +21,6 @@
             background-color: white;
         }
 
-        .buttonsAcc {
-            margin-left: 8rem;
-
-            .buttonMain {
-                margin: 2rem 0;
-                padding: 0rem 0.8rem;
-                font-size: 1.3rem;
-                font-weight: bold;
-                color: $blue;
-                border-radius: 10px;
-                border-color: white;
-            }
-        }
-
         div {
             ul {
                 .nav-item {
@@ -43,11 +29,15 @@
 
                     .nav-link {
                         color: white;
+                        position: relative;
+
+                        &:hover {
+                            color: #004254;
+                        }
                     }
 
-                    .nav-link:hover {
-                        color: white;
-                        text-decoration: underline;
+                    .active {
+                        border-bottom: 2px solid white;
                     }
                 }
             }

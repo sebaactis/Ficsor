@@ -12,12 +12,14 @@ import Trayectoria from "./components/Trayectoria.jsx";
 import Contacto from "./components/Contacto.jsx";
 import Home from "./components/Home.jsx";
 import AccProvider from "./context/AccContext";
+import ButtonsAcc from "./components/ButtonsAcc";
 
 function App() {
     return (
         <BrowserRouter>
             <AccProvider>
                 <NavBar isNavBar={true} />
+                <ButtonsAcc />
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/convocatoria" element={<Convocatoria />} />

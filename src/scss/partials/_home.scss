@@ -1,13 +1,6 @@
 .main {
     background-color: $blue;
-    
-
-    .mainHomeTitle {
-        text-align: center;
-        font-size: 2rem;
-        padding: 5.5rem 0;
-        color: white;
-    }
+    padding: 3rem 0;
 
     .mainHome {
         display: flex;
@@ -17,12 +10,19 @@
         div {
             article {
                 .pContainer {
-                    padding: 0 2rem;
+                    padding: 2rem;
                     width: 100%;
 
                     p {
                         color: white;
                     }
+                }
+
+                .mainHomeTitle {
+                    text-align: center;
+                    font-size: 2rem;
+                    padding: 2rem 0;
+                    color: white;
                 }
 
                 .buttonMain {
@@ -41,20 +41,23 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                padding-top: 2rem;
 
                 div {
 
-                    margin-left: 5rem;
+
 
                     .video1 {
+                        height: 27rem;
                         width: 100%;
-                        height: 432px;
-                        max-width: 762px;
+                        max-width: 48rem;
                     }
 
                 }
 
                 .buttonVideoContainer {
+
+                    margin-left: 13rem;
 
                     .donacionesBtn {
                         color: white;
@@ -62,6 +65,7 @@
                         background-color: $light-blue;
                         border: 2px solid $light-blue;
                         border-radius: 8px;
+                        padding: 0.313rem 2.188rem;
                     }
 
                     .convocatoriaBtn {
@@ -70,22 +74,6 @@
                         background-color: transparent;
                     }
 
-                    // .donacionesBtn {
-                    //     color: white;
-                    //     font-weight: bold;
-                    //     margin-top: 2rem;
-                    //     margin-bottom: 1.2rem;
-                    //     padding: 0.7rem 2rem;
-                    //     background-color: $light-blue;
-                    //     border: 2px solid $light-blue;
-                    //     border-radius: 8px;
-                    // }
-
-                    // .convocatoriaBtn {
-                    //     @extend .donacionesBtn;
-                    //     color: $light-blue;
-                    //     background-color: transparent;
-                    // }
                 }
             }
         }

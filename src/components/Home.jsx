@@ -1,6 +1,5 @@
 import React from "react";
 
-import { VscColorMode } from "react-icons/vsc";
 import { FaCircle } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
@@ -23,11 +22,11 @@ const Home = () => {
     return (
         <main>
             <section className="main pb-3">
-                <h1 className={`mainHomeTitle fw-bold ${incSize ? "fs-1" : ""}`}>¿Qué es el FiCSor?</h1>
                 <div className="mainHome">
-                    <div className="row gap-1 justify-content-center">
-                        <article className="col-lg-12 col-xl-4">
+                    <div className="d-flex justify-content-around">
+                        <article className="col-lg-6 col-xl-6">
                             <div className="pContainer ">
+                            <h1 className={`mainHomeTitle fw-bold ${incSize ? "fs-1" : ""}`}>¿Qué es el FiCSor?</h1>
                                 <p className={` ${incSize ? "fs-3" : "fs-4"}`}>
                                     El FiCSor es el primer festival de cine pensado y organizado por personas sordas en
                                     Argentina, y la primera plataforma de exhibición de películas de temática sorda
@@ -36,7 +35,7 @@ const Home = () => {
                                 </p>
                             </div>
                         </article>
-                        <article className="mainVideoButtons col-lg-12 col-xl-7 px-0 ">
+                        <article className="mainVideoButtons col-lg-6 col-xl-6 px-0">
                             <div className="container">
                                 <video className="video1" controls>
                                     <source src="../.." type="video/mp4" />
@@ -50,15 +49,6 @@ const Home = () => {
                                             DONACIONES
                                         </button>
                                     </div>
-
-                                    {/* <div className="buttonVideoContainer justify-content-end ">
-                                        <button className={`convocatoriaBtn btn ${incSize ? "btn-lg" : ""}`}>
-                                        CONVOCATORIA
-                                        </button>
-                                        <button className={`donacionesBtn btn ${incSize ? "btn-lg" : ""}`}>
-                                        DONACIONES
-                                        </button>
-                                    </div> */}
                                 </div>
                             </div>
                         </article>

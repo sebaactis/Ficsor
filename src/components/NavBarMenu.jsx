@@ -8,6 +8,7 @@ import trayectoria from "../videos/Trayectoria.webm";
 import contacto from "../videos/Contacto.webm";
 import { useAccContext } from "../context/AccContext";
 import { useMediaQuery } from "react-responsive";
+import { NavLink } from "react-router-dom";
 
 function NavBarMenu({ isNavBar }) {
     const { incSize, sizeBtn } = useAccContext();
@@ -77,9 +78,9 @@ function NavBarMenu({ isNavBar }) {
                                 </Popover>
                             }
                         >
-                            <a className={`nav-link ${incSize ? "fs-5" : ""}`} href={menu.href}>
+                            <NavLink className={`nav-link ${incSize ? "fs-5" : ""}`} to={menu.href}>
                                 {menu.title}
-                            </a>
+                            </NavLink>
                         </OverlayTrigger>
                     </li>
                 ))
