@@ -1,6 +1,7 @@
 import React from "react";
 
 import { FaCircle } from "react-icons/fa";
+import { IoIosArrowForward } from "react-icons/io";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
@@ -9,15 +10,14 @@ import instagram from "../icons/instagram.png";
 import tiktok from "../icons/tiktok.png";
 import facebook from "../icons/facebook.png";
 import Squares from "./Squares";
+import maskImg from "../assets/images/maskImg.png";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const Home = () => {
-    const { incSize, sizeBtn, contrast, contrastBtn } = useAccContext();
-
-    //  {` ${incSize ? "" : ""}`}
+    const { incSize } = useAccContext();
 
     return (
         <main>
@@ -26,7 +26,7 @@ const Home = () => {
                     <div className="d-flex justify-content-around">
                         <article className="col-lg-6 col-xl-6">
                             <div className="pContainer ">
-                            <h1 className={`mainHomeTitle fw-bold ${incSize ? "fs-1" : ""}`}>¿Qué es el FiCSor?</h1>
+                                <h1 className={`mainHomeTitle fw-bold ${incSize ? "fs-1" : ""}`}>¿Qué es el FiCSor?</h1>
                                 <p className={` ${incSize ? "fs-3" : "fs-4"}`}>
                                     El FiCSor es el primer festival de cine pensado y organizado por personas sordas en
                                     Argentina, y la primera plataforma de exhibición de películas de temática sorda
@@ -63,17 +63,19 @@ const Home = () => {
                     </div>
                     <div className="container py-5 px-0">
                         <article className="nextFestival col-lg-12 col-xs-12">
-                            <h1 className={`titleFestival col-lg-12 px-3 px-md-5 ${incSize ? "fs-2" : "fs-3"}`}>
-                                Próxima edición del festival
-                            </h1>
-                            <video className="video2" controls>
-                                <source src="movie.mp4" type="video/mp4" />
-                            </video>
+                            <div className="titleFestivalDiv">
+                                <IoIosArrowForward className="fs-2 arrow"color="white" />
+                                <h1 className={`titleFestival ${incSize ? "fs-3" : "fs-4"}`}>
+                                    Próxima edición del festival
+                                </h1>
+                            </div>
+
+                            <img className="imgMask" src={maskImg} />
                             <div className="festivalDescription w-100 py-3 px-3 ">
                                 <div className="d-grid gap-3 d-sm-flex justify-content-sm-between">
                                     <h1 className={` festivalText ${incSize ? "fs-5" : "fs-6"}`}>
-                                        ¡NOS ENCONTRAMOS <br></br>
-                                        DE NUEVO EN SEPTIEMBRE!
+                                        ¡Nos encontramos <br></br>
+                                        de nuevo en septiembre!
                                     </h1>
                                     <button className={`buttonDescription btn ${incSize ? "" : ""}`}>
                                         MAS INFORMACIÓN
