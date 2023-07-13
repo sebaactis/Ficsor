@@ -7,10 +7,17 @@
 
     .redesContainer {
         .row {
+
+            margin-bottom: 3rem;
+
             div {
                 a {
                     .iconSocial {
-                        width: 4.7rem;
+                        width: 12rem;
+                    }
+
+                    .iconSocial:hover {
+                        transform: scale(1.1) ;
                     }
                 }
             }

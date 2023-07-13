@@ -20,7 +20,7 @@
 
                 .mainHomeTitle {
                     text-align: center;
-                    font-size: 2rem;
+                    font-size: 2.25rem;
                     padding: 2rem 0;
                     color: white;
                 }
@@ -110,9 +110,9 @@
 
             .titleFestival {
                 color: white;
-                font-size: 2rem;
+                font-size: 2.25rem;
                 font-weight: bold;
-                
+
             }
         }
 
@@ -122,12 +122,9 @@
         }
 
         .festivalDescription {
-            // max-width: 732px;
-            //height: 85px;
             background-color: #004254;
 
             .festivalText {
-                font-size: 1.15rem;
                 color: white;
                 font-weight: bold;
                 text-align: left;
@@ -154,7 +151,8 @@
         div {
             a {
                 .iconSocial {
-                    width: 4rem;
+                    width: 11rem;
+                    transition: all 0.3s ease;
                 }
             }
         }
@@ -165,13 +163,15 @@
     background-color: #04809a;
 
     .swiper {
-        // max-width: 50%;
+
         width: 100%;
-        //margin: auto;
+        margin-bottom: 2rem;
 
         .swiper-button-next,
         .swiper-button-prev {
-            color: white;
+            background-color: #F8C014;
+            padding: 1.8rem;
+            border-radius: 50%;
         }
 
         .swiper-pagination {

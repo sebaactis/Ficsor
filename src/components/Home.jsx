@@ -6,9 +6,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
 import { useAccContext } from "../context/AccContext";
-import instagram from "../icons/instagram.png";
-import tiktok from "../icons/tiktok.png";
-import facebook from "../icons/facebook.png";
+import instagram from "../assets/images/instagram.png";
+import tiktok from "../assets/images/tiktok.png";
+import facebook from "../assets/images/facebook.png";
 import Squares from "./Squares";
 import maskImg from "../assets/images/maskImg.png";
 import "swiper/css";
@@ -27,7 +27,7 @@ const Home = () => {
                         <article className="col-lg-6 col-xl-6">
                             <div className="pContainer ">
                                 <h1 className={`mainHomeTitle fw-bold ${incSize ? "fs-1" : ""}`}>¿Qué es el FiCSor?</h1>
-                                <p className={` ${incSize ? "fs-3" : "fs-4"}`}>
+                                <p className={` ${incSize ? "fs-4" : "fs-5"}`}>
                                     El FiCSor es el primer festival de cine pensado y organizado por personas sordas en
                                     Argentina, y la primera plataforma de exhibición de películas de temática sorda
                                     nacionales e internacionales en el país. Su objetivo es, a través del cine, defender
@@ -73,7 +73,7 @@ const Home = () => {
                             <img className="imgMask" src={maskImg} />
                             <div className="festivalDescription w-100 py-3 px-3 ">
                                 <div className="d-grid gap-3 d-sm-flex justify-content-sm-between">
-                                    <h1 className={` festivalText ${incSize ? "fs-5" : "fs-6"}`}>
+                                    <h1 className={` festivalText ${incSize ? "fs-4" : "fs-5"}`}>
                                         ¡Nos encontramos <br></br>
                                         de nuevo en septiembre!
                                     </h1>
@@ -98,7 +98,7 @@ const Home = () => {
                     <div className="col-xs-12 col-sm-12 col-lg-4 d-flex justify-content-center justify-content-lg-end my-3">
                         <a href="/">
                             {" "}
-                            <img className="iconSocial" src={facebook} alt="logoFacebook" />{" "}
+                            <img className="iconSocial" src={instagram} alt="logoInstagram" />{" "}
                         </a>
                     </div>
                     <div className="col-xs-12 col-sm-12 col-lg-4 d-flex justify-content-center justify-content-lg-center my-3">
@@ -110,7 +110,7 @@ const Home = () => {
                     <div className="col-xs-12 col-sm-12 col-lg-4 d-flex justify-content-center justify-content-lg-start my-3">
                         <a href="/">
                             {" "}
-                            <img className="iconSocial" src={instagram} alt="logoInstagram" />{" "}
+                            <img className="iconSocial" src={facebook} alt="logoFacebook" />{" "}
                         </a>
                     </div>
                 </article>

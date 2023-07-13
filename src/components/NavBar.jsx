@@ -16,6 +16,23 @@ const NavBar = ({ isNavBar }) => {
                         <a className="navbar-brand" id="logo" title="logo de ficsor" href="/">
                             <img className="logo" src={logo} alt="logo de FiCSor" />
                         </a>
+                        <button
+                            className={`
+                            navbar-toggler togglerMenu 
+                            ${incSize ? "fs-2" : "fs-5"} 
+                            ${contrast ? "togglerContrast" : ""}
+                            `}
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapsibleNavbar"
+                        >
+                            <span
+                                className={`
+                            navbar-toggler-icon
+                            ${contrast ? "togglerContrast" : ""}
+                            `}
+                            ></span>
+                        </button>
                         <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                             <NavBarMenu isNavBar={isNavBar} />
                         </div>
