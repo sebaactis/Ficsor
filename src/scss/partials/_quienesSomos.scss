@@ -1,0 +1,88 @@
+main {
+    background-color: $blue;
+
+    .quienesSomos {
+
+        margin-left: 10rem;
+
+        .titleQuienesSomosDiv {
+
+            display: flex;
+            padding-bottom: 1rem;
+            width: 100%;
+            margin-left: 10rem;
+            padding: 2rem 0rem;
+
+            .titleQuienesSomos {
+                color: white;
+            }
+
+        }
+    }
+
+    .equipoArticle {
+        height: 150rem;
+
+        div {
+            .titleEquipo {
+                margin-left: 3rem;
+                padding-top: 1.5rem;
+                color: white;
+            }
+
+            .titleEquipo2 {
+                margin-left: 1rem;
+                padding-top: 1.5rem;
+                color: white;
+            }
+
+            .parrafoEquipo {
+                margin-left: 3rem;
+                border-bottom: 2px solid #F8C014;
+                margin-right: 15rem;
+                color: #F8C014;
+            }
+
+            .imgEquipo {
+                margin-left: 3rem;
+            }
+
+            .parrafoNamesEquipo {
+                margin-left: 3rem;
+                color: white
+            }
+
+            .parrafoNamesEquipo2 {
+                margin-left: 1rem;
+                color: white
+            }
+
+            .areasGrid {
+                margin-top: 1rem;
+            }
+
+            .mailsGrid {
+                margin-top: 1.5rem;
+
+                .titleMails {
+                    color: #F8C014;
+                    margin-left: 3rem;
+                }
+
+                .parrafoMails {
+                    margin-left: 3rem;
+                    margin-top: 0.5rem;
+                    color: white;
+                }
+            }
+        }
+
+        .separador {
+            border-bottom: 2px solid white;
+            margin-top: 1.5rem;
+            margin-right: 10rem;
+            margin-left: 3rem;
+        }
+
+    }
+}
