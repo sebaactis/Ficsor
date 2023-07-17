@@ -1,6 +1,3 @@
-import React from "react";
-
-import { FaCircle } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
@@ -11,10 +8,22 @@ import tiktok from "../assets/images/tiktok.png";
 import facebook from "../assets/images/facebook.png";
 import Squares from "./Squares";
 import maskImg from "../assets/images/maskImg.png";
+import slide1 from "../assets/images/slide1.png";
+import slide2 from "../assets/images/slide2.jpg";
+import slide3 from "../assets/images/slide3.jpg";
+import slide4 from "../assets/images/slide4.jpg";
+import avalIncaa from "../assets/images/avalIncaa.png";
+import avalTecno from "../assets/images/avalTecno.png";
+import avalEspana from "../assets/images/avalEspana.png";
+import avalIbero from "../assets/images/avalIbero.png";
+import avalTecnoColor from "../assets/images/avalTecnoColor.png";
+import avalEspanaColor from "../assets/images/avalEspanaColor.png";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
     const { incSize } = useAccContext();
@@ -42,12 +51,17 @@ const Home = () => {
                                 </video>
                                 <div className="container buttonsDiv">
                                     <div className="buttonVideoContainer d-grid gap-5 d-sm-flex justify-content-sm-center ">
-                                        <button className={`convocatoriaBtn btn ${incSize ? "btn-lg" : ""}`}>
-                                            CONVOCATORIA
-                                        </button>
-                                        <button className={`donacionesBtn btn ${incSize ? "btn-lg" : ""}`}>
-                                            DONACIONES
-                                        </button>
+                                        <NavLink to="/convocatoria">
+                                            <button className={`convocatoriaBtn btn ${incSize ? "btn-lg" : ""}`}>
+                                                CONVOCATORIA
+                                            </button>
+                                        </NavLink>
+                                        <a href="https://cafecito.app/ficsor" target="_blank">
+                                            <button className={`donacionesBtn btn ${incSize ? "btn-lg" : ""}`}>
+
+                                                DONACIONES
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +78,7 @@ const Home = () => {
                     <div className="container py-5 px-0">
                         <article className="nextFestival col-lg-12 col-xs-12">
                             <div className="titleFestivalDiv">
-                                <IoIosArrowForward className="fs-2 arrow"color="white" />
+                                <IoIosArrowForward className="fs-2 arrow" color="white" />
                                 <h1 className={`titleFestival ${incSize ? "fs-3" : "fs-4"}`}>
                                     Próxima edición del festival
                                 </h1>
@@ -80,12 +94,12 @@ const Home = () => {
 
             <section className="redesContainer d-flex flex-column justify-content-center pb-4">
                 <h1 className={`text-center my-5 text-light fw-bold px-3 ${incSize ? "fs-2" : "fs-3"}`}>
-                    MANTENETE INFORMADO A TRAVÉS DE NUESTRAS REDES
+                    Mantenete informado a través de nuestras redes sociales
                 </h1>
                 <article className="row">
                     <div className="col-xs-12 col-sm-12 col-lg-4 d-flex justify-content-center justify-content-lg-end my-3">
-                        <a href="/">
-                            {" "}
+                        <a href="https://www.instagram.com/ficsor.arg/?hl=es" target="_blank">
+
                             <img className="iconSocial" src={instagram} alt="logoInstagram" />{" "}
                         </a>
                     </div>
@@ -96,7 +110,7 @@ const Home = () => {
                         </a>
                     </div>
                     <div className="col-xs-12 col-sm-12 col-lg-4 d-flex justify-content-center justify-content-lg-start my-3">
-                        <a href="/">
+                        <a href="https://www.facebook.com/festivalcinesordoarg/?locale=es_LA" target="_blank">
                             {" "}
                             <img className="iconSocial" src={facebook} alt="logoFacebook" />{" "}
                         </a>
@@ -105,10 +119,10 @@ const Home = () => {
             </section>
 
             <section className="carouselSection py-4">
-                <h2 className={`text-center text-white py-3 fw-bold ${incSize ? "fs-2" : "fs-3"}`}>
-                    Titulo de seccion
+                <h2 className={`text-center text-white py-3 my-5 fw-bold ${incSize ? "fs-2" : "fs-3"}`}>
+                    Ediciones anteriores
                 </h2>
-                <div className="container text-center px-0">
+                <div className="container text-center px-0 carouselDiv">
                     <Swiper
                         modules={[Navigation, Pagination, Scrollbar, A11y]}
                         spaceBetween={40}
@@ -117,28 +131,37 @@ const Home = () => {
                         pagination={{ clickable: true }}
                     >
                         <SwiperSlide>
-                            <img src="https://pbs.twimg.com/media/CfyUC7uW8AEz7n6.jpg" />
+                            <img src={slide1} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://pbs.twimg.com/media/CfyUC7uW8AEz7n6.jpg" />{" "}
+                            <img className="imgSlides" src={slide2} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://pbs.twimg.com/media/CfyUC7uW8AEz7n6.jpg" />{" "}
+                            <img className="imgSlides" src={slide3} />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://pbs.twimg.com/media/CfyUC7uW8AEz7n6.jpg" />{" "}
+                            <img className="imgSlides" src={slide4} />
                         </SwiperSlide>
                     </Swiper>
                 </div>
             </section>
 
             <section className="avalesSection">
-                <h2 className={`text-center text-white fw-bold py-5 ${incSize ? "fs-2" : "fs-3"}`}>NUESTROS AVALES</h2>
-                <article className="d-flex justify-content-center align-items-center">
-                    <FaCircle className="fs-1 text-white mx-3" />
-                    <FaCircle className="fs-1 text-white mx-3" />
-                    <FaCircle className="fs-1 text-white mx-3" />
-                    <FaCircle className="fs-1 text-white mx-3" />
+                <h2 className={`text-center avalesTitle fw-bold py-5 ${incSize ? "fs-2" : "fs-3"}`}>Nuestros Avales</h2>
+                <article className="avalesDiv">
+                    <div>
+                        <img src={avalIncaa} />
+                    </div>
+                    <div className="tecnoDiv">
+                        <img className="base-image" src={avalTecno} />
+                        <img className="hover-image" src={avalTecnoColor} />
+                    </div>
+                    <div className="d-flex align-items-center gap-5">
+                        <div className="espanaDiv">
+                            <img className="base-image" src={avalEspana} />
+                            <img className="hover-image" src={avalEspanaColor} />
+                        </div>
+                        <img src={avalIbero} /></div>
                 </article>
             </section>
         </main>

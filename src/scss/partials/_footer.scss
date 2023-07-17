@@ -6,7 +6,7 @@
 
 
         .sectionLogo {
-            
+
             .logoContactDiv {
                 width: 30%;
                 margin-left: 200px;
@@ -39,16 +39,28 @@
             }
         }
 
-        .buttonFooter {
-            color: white;
-            font-weight: bold;
-            padding: 1.5rem 3rem;
-            background-color: #04809a;
-            border: 2px solid #04809a;
-            border-radius: 8px;
-            margin-right: 15rem;
-            margin-top: 2rem;
+        .rowButtonDiv {
+
+            margin-right: 10rem;
+            gap: 2rem;
+
+
+            .buttonFooter {
+                color: white;
+                font-weight: bold;
+                padding: 1.5rem 3rem;
+                background-color: #04809a;
+                border: 2px solid #04809a;
+                border-radius: 8px;
+                margin-top: 2rem;
+            }
+
+            img {
+                margin-top: 1rem;
+            }
         }
+
+
 
 
         .navFooterDiv {

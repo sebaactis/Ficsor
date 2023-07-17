@@ -16,13 +16,13 @@ function NavBarMenu({ isNavBar }) {
 
 
     const menuArray = [
-        { title: "HOME", url: home, href: "/" },
         {
-<<<<<<< HEAD
-            title: "SOBRE NOSOTROS",
-=======
+            title: "HOME",
+            url: home,
+            href: "/"
+        },
+        {
             title: "QUIENES SOMOS",
->>>>>>> a103ef7458110cd61a727ca62d42d1b11b6bb9a7
             url: sobreNosotros,
             href: "/sobrenosotros",
         },

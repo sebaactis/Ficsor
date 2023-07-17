@@ -1,10 +1,10 @@
-import React from "react";
 import logowhite from "../assets/images/logowhite.png";
 import { useAccContext } from "../context/AccContext";
 import NavBar from "./NavBar";
+import vector from "../assets/images/vector.png";
 
 const Footer = () => {
-    const { incSize, sizeBtn } = useAccContext();
+    const { incSize } = useAccContext();
     return (
         <footer className="footer">
             <div className="footerDiv">
@@ -21,7 +21,11 @@ const Footer = () => {
                         <NavBar isNavBar={false} />
                     </div>
                 </section>
-                <button className={`buttonFooter btn ${incSize ? "btn-lg" : ""}`}> DONACIONES </button>
+                <div className="d-flex flex-row-reverse align-items-center rowButtonDiv">
+                    <a href="#navBarRow"> <img src={vector} /> </a>
+                    <a href="https://cafecito.app/ficsor" target="_blank"><button className={`buttonFooter btn ${incSize ? "btn-lg" : ""}`}> DONACIONES </button></a>
+                </div>
+
             </div>
 
         </footer>

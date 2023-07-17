@@ -5,12 +5,21 @@ main {
     .convocatoria {
         height: 100%;
 
+        .titleConvocatoriaDiv {
 
-        .titleConvocatoria {
-            color: white;
+            display: flex;
+            padding-bottom: 1rem;
+            width: 100%;
+            margin-left: 20rem;
             padding: 2rem 0rem;
-            margin-left: 16rem;
+
+            .titleConvocatoria {
+                color: white;
+            }
         }
+
+
+
 
         .convocatoriaBases {
             height: 100%;
@@ -123,7 +132,7 @@ main {
         .linksButtons {
 
             text-decoration: none;
-            
+
             .buttonConvocatoria {
                 padding: 0rem 1.6rem;
                 background-color: #C11C70;

@@ -1,5 +1,6 @@
 import { AiOutlineDownload } from "react-icons/ai";
 import { useAccContext } from "../context/AccContext";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Convocatoria = () => {
 
@@ -8,9 +9,13 @@ const Convocatoria = () => {
     return (
         <main>
             <section className="convocatoria">
-                <h1 className="fs-3 titleConvocatoria">
-                    Convocatoria
-                </h1>
+                <div className="titleConvocatoriaDiv">
+                    <IoIosArrowForward className="fs-2 arrow" color="#75AA43" />
+                    <h1 className={`titleConvocatoria fw-bold ${incSize ? "fs-2" : "fs-3"}`}>
+                        Convocatoria
+                    </h1>
+                </div>
+
                 <article className="container convocatoriaBases">
                     <div>
                         <h5 className={`titleBases fw-bold ${incSize ? "fs-4" : "fs-5"}`}>FICSor - 3er Festival Internacional de Cine Sordo de Argentina </h5>
