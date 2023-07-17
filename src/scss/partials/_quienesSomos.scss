@@ -21,7 +21,7 @@ main {
     }
 
     .equipoArticle {
-        height: 150rem;
+        height: 100%;
 
         div {
             .titleEquipo {
@@ -45,6 +45,7 @@ main {
 
             .imgEquipo {
                 margin-left: 3rem;
+                max-width: 78%;
             }
 
             .parrafoNamesEquipo {
