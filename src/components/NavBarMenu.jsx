@@ -18,6 +18,11 @@ function NavBarMenu({ isNavBar }) {
     const menuArray = [
         { title: "HOME", url: home, href: "/" },
         {
+            title: "SOBRE NOSOTROS",
+            url: sobreNosotros,
+            href: "/sobrenosotros",
+        },
+        {
             title: "CONVOCATORIA",
             url: convocatoria,
             href: "/convocatoria",
@@ -27,11 +32,7 @@ function NavBarMenu({ isNavBar }) {
             url: noticias,
             href: "/noticias",
         },
-        {
-            title: "SOBRE NOSOTROS",
-            url: sobreNosotros,
-            href: "/sobrenosotros",
-        },
+
         {
             title: "TRAYECTORIA",
             url: trayectoria,
