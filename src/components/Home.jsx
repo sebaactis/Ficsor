@@ -43,13 +43,7 @@ const Home = () => {
                                     y reconocer los derechos sociales, culturales y lingüísticos de la comunidad sorda.
                                 </p>
                             </div>
-                        </article>
-                        <article className="mainVideoButtons col-lg-6 col-xl-6 col-md-12 col-xs-12 px-0">
-                            <div className="container">
-                                <video className="video1" controls>
-                                    <source src="../.." type="video/mp4" />
-                                </video>
-                                <div className="container buttonsDiv">
+                            <div className="container buttonsDiv">
                                     <div className="buttonVideoContainer d-grid gap-5 d-sm-flex justify-content-sm-center ">
                                         <NavLink to="/convocatoria">
                                             <button className={`convocatoriaBtn btn ${incSize ? "btn-lg" : ""}`}>
@@ -58,13 +52,11 @@ const Home = () => {
                                         </NavLink>
                                         <a href="https://cafecito.app/ficsor" target="_blank">
                                             <button className={`donacionesBtn btn ${incSize ? "btn-lg" : ""}`}>
-
                                                 DONACIONES
                                             </button>
                                         </a>
                                     </div>
                                 </div>
-                            </div>
                         </article>
                     </div>
                 </div>

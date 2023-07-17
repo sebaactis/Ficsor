@@ -11,10 +11,34 @@
             article {
                 .pContainer {
                     padding: 2rem;
-                    width: 100%;
+                    width: 60%;
+                    margin: auto;
 
                     p {
                         color: white;
+                    }
+                }
+
+                .buttonsDiv {
+                    padding: 2rem;
+
+                    .buttonVideoContainer {
+    
+                        .donacionesBtn {
+                            color: white;
+                            font-weight: bold;
+                            background-color: $light-blue;
+                            border: 2px solid $light-blue;
+                            border-radius: 8px;
+                            padding: 0.313rem 2.188rem;
+                        }
+    
+                        .convocatoriaBtn {
+                            @extend .donacionesBtn;
+                            color: $light-blue;
+                            background-color: transparent;
+                        }
+    
                     }
                 }
 
@@ -36,48 +60,6 @@
                 }
             }
 
-            .mainVideoButtons {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding-top: 2rem;
-
-                div {
-
-                    .video1 {
-                        height: 27rem;
-                        width: 100%;
-                        max-width: 48rem;
-                    }
-
-                    .buttonsDiv {
-                        padding: 2rem;
-                    }
-
-                }
-
-                .buttonVideoContainer {
-
-                    margin-left: 13rem;
-
-                    .donacionesBtn {
-                        color: white;
-                        font-weight: bold;
-                        background-color: $light-blue;
-                        border: 2px solid $light-blue;
-                        border-radius: 8px;
-                        padding: 0.313rem 2.188rem;
-                    }
-
-                    .convocatoriaBtn {
-                        @extend .donacionesBtn;
-                        color: $light-blue;
-                        background-color: transparent;
-                    }
-
-                }
-            }
         }
     }
 }
