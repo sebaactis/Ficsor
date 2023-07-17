@@ -1,7 +1,7 @@
 import logowhite from "../assets/images/logowhite.png";
 import { useAccContext } from "../context/AccContext";
 import NavBar from "./NavBar";
-import vector from "../assets/images/vector.png";
+import vector from "../assets/images/Vector.png";
 
 const Footer = () => {
     const { incSize } = useAccContext();
