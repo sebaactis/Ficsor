@@ -69,19 +69,7 @@ const Home = () => {
                                     Próxima edición del festival
                                 </h1>
                             </div>
-
                             <img className="imgMask" src={maskImg} />
-                            <div className="festivalDescription w-100 py-3 px-3 ">
-                                <div className="d-grid gap-3 d-sm-flex justify-content-sm-between">
-                                    <h1 className={` festivalText ${incSize ? "fs-4" : "fs-5"}`}>
-                                        ¡Nos encontramos <br></br>
-                                        de nuevo en septiembre!
-                                    </h1>
-                                    <button className={`buttonDescription btn ${incSize ? "" : ""}`}>
-                                        MAS INFORMACIÓN
-                                    </button>
-                                </div>
-                            </div>
                         </article>
                     </div>
                     <div className="pb-5">
