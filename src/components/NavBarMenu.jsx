@@ -11,12 +11,17 @@ import { useMediaQuery } from "react-responsive";
 import { NavLink } from "react-router-dom";
 
 function NavBarMenu({ isNavBar }) {
-    const { incSize, sizeBtn } = useAccContext();
+    const { incSize } = useAccContext();
     const isMobile = useMediaQuery({ query: "(max-width: 987px)" })
 
 
     const menuArray = [
         { title: "HOME", url: home, href: "/" },
+        {
+            title: "QUIENES SOMOS",
+            url: sobreNosotros,
+            href: "/sobrenosotros",
+        },
         {
             title: "CONVOCATORIA",
             url: convocatoria,
@@ -27,11 +32,7 @@ function NavBarMenu({ isNavBar }) {
             url: noticias,
             href: "/noticias",
         },
-        {
-            title: "SOBRE NOSOTROS",
-            url: sobreNosotros,
-            href: "/sobrenosotros",
-        },
+
         {
             title: "TRAYECTORIA",
             url: trayectoria,
@@ -43,9 +44,6 @@ function NavBarMenu({ isNavBar }) {
             href: "/contacto",
         },
     ];
-
-    // <iframe src="https://drive.google.com/file/d/1hbB63Ehk5yc1YwuCg8XOkrt2lAJdHleR/preview" width="640" height="480" allow="autoplay"></iframe>
-
 
 
     if (isMobile || !isNavBar) {

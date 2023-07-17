@@ -127,16 +127,6 @@
 }
 
 
-.festivalDescription {
-    max-width: 732px;
-    width: 100%;
-    height: 85px;
-    background-color: #004254;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .video2 {
     width: 100%;
     height: 432px;
