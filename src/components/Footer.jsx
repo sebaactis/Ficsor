@@ -25,7 +25,6 @@ const Footer = () => {
                     <a href="#navBarRow"> <img src={vector} /> </a>
                     <a href="https://cafecito.app/ficsor" target="_blank"><button className={`buttonFooter btn ${incSize ? "btn-lg" : ""}`}> DONACIONES </button></a>
                 </div>
-
             </div>
 
         </footer>
