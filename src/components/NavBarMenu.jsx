@@ -11,14 +11,18 @@ import { useMediaQuery } from "react-responsive";
 import { NavLink } from "react-router-dom";
 
 function NavBarMenu({ isNavBar }) {
-    const { incSize, sizeBtn } = useAccContext();
+    const { incSize } = useAccContext();
     const isMobile = useMediaQuery({ query: "(max-width: 987px)" })
 
 
     const menuArray = [
         { title: "HOME", url: home, href: "/" },
         {
+<<<<<<< HEAD
             title: "SOBRE NOSOTROS",
+=======
+            title: "QUIENES SOMOS",
+>>>>>>> a103ef7458110cd61a727ca62d42d1b11b6bb9a7
             url: sobreNosotros,
             href: "/sobrenosotros",
         },
@@ -44,9 +48,6 @@ function NavBarMenu({ isNavBar }) {
             href: "/contacto",
         },
     ];
-
-    // <iframe src="https://drive.google.com/file/d/1hbB63Ehk5yc1YwuCg8XOkrt2lAJdHleR/preview" width="640" height="480" allow="autoplay"></iframe>
-
 
 
     if (isMobile || !isNavBar) {
