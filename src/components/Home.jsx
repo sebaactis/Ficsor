@@ -156,10 +156,10 @@ const Home = () => {
                     </div>
                 </article>
             </section> */}
-            <section className="">
+            <section>
                 <h2 className={`text-center avalesTitle fw-bold py-5 ${incSize ? "fs-2" : "fs-3"}`}>Nuestros Avales</h2>
 
-                <article className="container d-grid gap-4">
+                <article className="container d-grid gap-5">
                     <div className="text-center my-auto">
                         <img className="w-75 ms-2"src={avalIncaa} />
                     </div>
@@ -180,7 +180,7 @@ const Home = () => {
                         </div>
 
                         <div className="col-lg-4 col-sm-12">
-                            <img className="w-50" src={avalIbero} />
+                            <img className="aval-ibero" src={avalIbero} />
                         </div>
                     </div>
                 </article>
