@@ -159,28 +159,28 @@ const Home = () => {
             <section className="">
                 <h2 className={`text-center avalesTitle fw-bold py-5 ${incSize ? "fs-2" : "fs-3"}`}>Nuestros Avales</h2>
 
-                <article className="container d-grid gap-4 ">
-                    <div className="row text-center ">
-                        <img src={avalIncaa} />
+                <article className="container d-grid gap-4">
+                    <div className="text-center my-auto">
+                        <img className="w-75 ms-2"src={avalIncaa} />
                     </div>
 
                     <div className="row text-center">
                         <div className="position-relative">
-                            <img className="w-100 position-absolute aval-img-color" src={avalTecnoColor} />
-                            <img className="w-100" src={avalTecno} />
+                            <img className="w-75 position-absolute aval-img-color" src={avalTecnoColor} />
+                            <img className="w-75" src={avalTecno} />
                         </div>
                     </div>
 
                     <div className="row text-center">
                         <div className="col-lg-8 col-sm-12 align-self-center">
                             <div className="position-relative">
-                                <img className="w-100 position-absolute aval-img-color" src={avalEspanaColor} />
-                                <img className="w-100" src={avalEspana} />
+                                <img className="w-75 position-absolute aval-img-color" src={avalEspanaColor} />
+                                <img className="w-75" src={avalEspana} />
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-sm-12">
-                            <img src={avalIbero} />
+                            <img className="w-50" src={avalIbero} />
                         </div>
                     </div>
                 </article>

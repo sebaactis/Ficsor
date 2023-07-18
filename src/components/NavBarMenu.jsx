@@ -32,23 +32,6 @@ function NavBarMenu({ isNavBar }) {
 
     }
 
-    const handleSnackBarMovile = () => {
-
-        toast.error("Esta sección aún no se encuentra disponible. Podrás verla próximamente.", {
-            position: "top-right",
-            autoClose: 2500,
-            hideProgressBar: false,
-            closeOnClick: true,
-            draggable: true,
-            progress: undefined,
-            theme: "colored"
-
-
-        })
-
-    }
-
-
     const menuArray = [
         {
             title: "HOME",
