@@ -62,6 +62,41 @@ const Home = () => {
                 </div>
             </section>
 
+            <section className="main pb-3">
+                <h1 className={`mainHomeTitle fw-bold ${incSize ? "fs-1" : ""}`}>¿Qué es el FiCSor?</h1>
+                <div className="mainHome">
+                    <div className="row gap-1 justify-content-center w-100">
+                        <article className="col-lg-12 col-xl-4 ">
+                            <div className="pContainer ">
+                                <p className={` ${incSize ? "fs-3" : "fs-4"}`}>
+                                    El FiCSor es el primer festival de cine pensado y organizado por personas sordas en
+                                    Argentina, y la primera plataforma de exhibición de películas de temática sorda
+                                    nacionales e internacionales en el país. Su objetivo es, a través del cine, defender
+                                    y reconocer los derechos sociales, culturales y lingüísticos de la comunidad sorda.
+                                </p>
+                            </div>
+                        </article>
+                        <article className="mainVideoButtons col-lg-12 col-xl-7 px-0 ">
+                            <div className="container px-0">
+                                <video className="video1" controls>
+                                    <source src="../.." type="video/mp4" />
+                                </video>
+                                <div className="container px-3 py-3">
+                                    <div className="buttonVideoContainer d-grid gap-5 d-sm-flex justify-content-sm-end ">
+                                        <button className={`convocatoriaBtn btn ${incSize ? "btn-lg" : ""}`}>
+                                            CONVOCATORIA
+                                        </button>
+                                        <button className={`donacionesBtn btn ${incSize ? "btn-lg" : ""}`}>
+                                            DONACIONES
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
             <section className="sectionFestival">
                 <div className="pb-4 mb-3">
                     <div className="pt-4 pb-5">
