@@ -1,0 +1,38 @@
+@media (width <=768px) {
+    main {
+
+        .convocatoria {
+
+            .titleConvocatoriaDiv {
+
+                padding-top: 6rem;
+                max-width: 100%;
+                margin-left: 5rem;
+            }
+
+            .convocatoriaBases {
+                width: 92%;
+            }
+        }
+
+        .buttonConvocatoriaDiv {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .linksButtons {
+
+                margin: auto;
+
+                .buttonConvocatoria {
+                    padding: 0rem 1rem;
+                    margin-right: 0rem;
+                    margin-left: 0rem;
+                }
+
+            }
+
+        }
+    }
+}
