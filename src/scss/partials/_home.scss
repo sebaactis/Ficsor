@@ -23,7 +23,6 @@
                     padding: 2rem;
 
                     .buttonVideoContainer {
-    
                         .donacionesBtn {
                             color: white;
                             font-weight: bold;
@@ -32,13 +31,12 @@
                             border-radius: 8px;
                             padding: 0.313rem 2.188rem;
                         }
-    
+
                         .convocatoriaBtn {
                             @extend .donacionesBtn;
                             color: $light-blue;
                             background-color: transparent;
                         }
-    
                     }
                 }
 
@@ -59,7 +57,6 @@
                     border-color: white;
                 }
             }
-
         }
     }
 }
@@ -81,15 +78,12 @@
         }
     }
 
-
     .nextFestival {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-
         .titleFestivalDiv {
-
             display: flex;
             padding-bottom: 1rem;
             width: 100%;
@@ -98,7 +92,6 @@
                 color: white;
                 font-size: 2.25rem;
                 font-weight: bold;
-
             }
         }
 
@@ -149,13 +142,12 @@
     background-color: #04809a;
 
     .swiper {
-
         width: 100%;
         margin-bottom: 2rem;
 
         .swiper-button-next,
         .swiper-button-prev {
-            background-color: #F8C014;
+            background-color: #f8c014;
             padding: 1.8rem;
             border-radius: 50%;
         }
@@ -175,80 +167,85 @@
     }
 }
 
-.avalesSection {
-    background-color: #004254;
-    padding: 1rem 0;
+// .avalesSection {
+//     background-color: #004254;
+//     padding: 1rem 0;
 
-    .avalesTitle {
-        color: #F8C014;
-        margin-bottom: 5rem;
-    }
+//     .avalesTitle {
+//         color: #f8c014;
+//         margin-bottom: 5rem;
+//     }
 
-    .avalesDiv {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        justify-items: center;
-        gap: 2rem;
-        
+//     .avalesDiv {
+//         display: grid;
+//         grid-template-rows: 1fr 1fr 1fr;
+//         justify-items: center;
+//         gap: 2rem;
 
-        .tecnoDiv {
+//         .tecnoDiv {
+//             margin-right: 40rem;
+//             margin-bottom: 10rem;
+//             position: relative;
 
-            margin-right: 40rem;
-            margin-bottom: 10rem;
-            position: relative;
+//             .base-image {
+//                 position: absolute;
+//                 transition: opacity 0.3s ease-in-out;
+//             }
 
+//             .base-image:hover {
+//                 opacity: 0;
+//             }
 
-            .base-image {
-                position: absolute;
-                transition: opacity 0.3s ease-in-out;
-            }
+//             .hover-image {
+//                 position: absolute;
+//                 opacity: 0;
 
-            .base-image:hover {
-                opacity: 0;
-            }
+//                 transition: opacity 0.3s ease-in-out;
+//             }
 
-            .hover-image {
-                position: absolute;
-                opacity: 0;
+//             .hover-image:hover {
+//                 opacity: 1;
+//             }
+//         }
 
-                transition: opacity 0.3s ease-in-out;
-            }
+//         div {
+//             .espanaDiv {
+//                 position: relative;
+//                 margin-right: 45rem;
+//                 margin-bottom: 8rem;
 
-            .hover-image:hover {
-                opacity: 1;
+//                 .base-image {
+//                     position: absolute;
+//                     transition: opacity 0.3s ease-in-out;
+//                 }
 
-            }
-        }
+//                 .base-image:hover {
+//                     opacity: 0;
+//                 }
 
-        div {
+//                 .hover-image {
+//                     position: absolute;
+//                     opacity: 0;
 
-            .espanaDiv {
-                position: relative;
-                margin-right: 45rem;
-                margin-bottom: 8rem;
+//                     transition: opacity 0.3s ease-in-out;
+//                 }
 
-                .base-image {
-                    position: absolute;
-                    transition: opacity 0.3s ease-in-out;
-                }
+//                 .hover-image:hover {
+//                     opacity: 1;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-                .base-image:hover {
-                    opacity: 0;
-                }
+.avalesTitle {
+    color: #f8c014;
+}
 
-                .hover-image {
-                    position: absolute;
-                    opacity: 0;
+.aval-img-color {
+    opacity: 0;
+}
 
-                    transition: opacity 0.3s ease-in-out;
-                }
-
-                .hover-image:hover {
-                    opacity: 1;
-
-                }
-            }
-        }
-
-    }
+.aval-img-color:hover {
+    opacity: 1;
 }

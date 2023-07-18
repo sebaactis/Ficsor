@@ -7,7 +7,6 @@
 
     .redesContainer {
         .row {
-
             margin-bottom: 3rem;
 
             div {
@@ -17,7 +16,7 @@
                     }
 
                     .iconSocial:hover {
-                        transform: scale(1.1) ;
+                        transform: scale(1.1);
                     }
                 }
             }
@@ -36,21 +35,18 @@
             div {
                 .mainVideoButtons {
                     .container {
-
                         max-width: 100%;
 
                         .video1 {
                             width: 20rem;
                         }
 
-                        .buttonsDiv {
-                            
-                        }
+                        // .buttonsDiv {
+
+                        // }
                     }
                 }
             }
         }
-
-
     }
 }

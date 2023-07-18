@@ -33,7 +33,7 @@ const Home = () => {
             <section className="main pb-3">
                 <div className="mainHome">
                     <div className="row d-flex justify-content-around">
-                        <article className="col-lg-6 col-xl-6 col-md-12 col-xs-12">
+                        <article className="col-lg-8 col-xl-8 col-md-12 col-xs-12">
                             <div className="pContainer ">
                                 <h1 className={`mainHomeTitle fw-bold ${incSize ? "fs-1" : ""}`}>¿Qué es el FiCSor?</h1>
                                 <p className={` ${incSize ? "fs-4" : "fs-5"}`}>
@@ -44,19 +44,19 @@ const Home = () => {
                                 </p>
                             </div>
                             <div className="container buttonsDiv">
-                                    <div className="buttonVideoContainer d-grid gap-5 d-sm-flex justify-content-sm-center ">
-                                        <NavLink to="/convocatoria">
-                                            <button className={`convocatoriaBtn btn ${incSize ? "btn-lg" : ""}`}>
-                                                CONVOCATORIA
-                                            </button>
-                                        </NavLink>
-                                        <a href="https://cafecito.app/ficsor" target="_blank">
-                                            <button className={`donacionesBtn btn ${incSize ? "btn-lg" : ""}`}>
-                                                DONACIONES
-                                            </button>
-                                        </a>
-                                    </div>
+                                <div className="buttonVideoContainer d-grid gap-5 d-sm-flex justify-content-sm-center ">
+                                    <NavLink to="/convocatoria">
+                                        <button className={`convocatoriaBtn btn ${incSize ? "btn-lg" : ""}`}>
+                                            CONVOCATORIA
+                                        </button>
+                                    </NavLink>
+                                    <a href="https://cafecito.app/ficsor" target="_blank">
+                                        <button className={`donacionesBtn btn ${incSize ? "btn-lg" : ""}`}>
+                                            DONACIONES
+                                        </button>
+                                    </a>
                                 </div>
+                            </div>
                         </article>
                     </div>
                 </div>
@@ -91,7 +91,6 @@ const Home = () => {
                 <article className="row">
                     <div className="col-xs-12 col-sm-12 col-lg-4 d-flex justify-content-center justify-content-lg-end my-3">
                         <a href="https://www.instagram.com/ficsor.arg/?hl=es" target="_blank">
-
                             <img className="iconSocial" src={instagram} alt="logoInstagram" />{" "}
                         </a>
                     </div>
@@ -138,7 +137,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="avalesSection">
+            {/* <section className="avalesSection">
                 <h2 className={`text-center avalesTitle fw-bold py-5 ${incSize ? "fs-2" : "fs-3"}`}>Nuestros Avales</h2>
                 <article className="avalesDiv">
                     <div>
@@ -153,7 +152,37 @@ const Home = () => {
                             <img className="base-image" src={avalEspana} />
                             <img className="hover-image" src={avalEspanaColor} />
                         </div>
-                        <img src={avalIbero} /></div>
+                        <img src={avalIbero} />
+                    </div>
+                </article>
+            </section> */}
+            <section className="">
+                <h2 className={`text-center avalesTitle fw-bold py-5 ${incSize ? "fs-2" : "fs-3"}`}>Nuestros Avales</h2>
+
+                <article className="container d-grid gap-4 ">
+                    <div className="row text-center ">
+                        <img src={avalIncaa} />
+                    </div>
+
+                    <div className="row text-center">
+                        <div className="position-relative">
+                            <img className="w-100 position-absolute aval-img-color" src={avalTecnoColor} />
+                            <img className="w-100" src={avalTecno} />
+                        </div>
+                    </div>
+
+                    <div className="row text-center">
+                        <div className="col-lg-8 col-sm-12 align-self-center">
+                            <div className="position-relative">
+                                <img className="w-100 position-absolute aval-img-color" src={avalEspanaColor} />
+                                <img className="w-100" src={avalEspana} />
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-sm-12">
+                            <img src={avalIbero} />
+                        </div>
+                    </div>
                 </article>
             </section>
         </main>
