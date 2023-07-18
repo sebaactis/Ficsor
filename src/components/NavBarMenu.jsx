@@ -9,10 +9,44 @@ import contacto from "../videos/Contacto.webm";
 import { useAccContext } from "../context/AccContext";
 import { useMediaQuery } from "react-responsive";
 import { NavLink } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+
 
 function NavBarMenu({ isNavBar }) {
     const { incSize } = useAccContext();
     const isMobile = useMediaQuery({ query: "(max-width: 987px)" })
+
+    const handleSnackBar = () => {
+
+        toast.error("Esta sección aún no se encuentra disponible. Podrás verla próximamente.", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored"
+
+
+        })
+
+    }
+
+    const handleSnackBarMovile = () => {
+
+        toast.error("Esta sección aún no se encuentra disponible. Podrás verla próximamente.", {
+            position: "top-right",
+            autoClose: 2500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored"
+
+
+        })
+
+    }
 
 
     const menuArray = [
@@ -30,23 +64,7 @@ function NavBarMenu({ isNavBar }) {
             title: "CONVOCATORIA",
             url: convocatoria,
             href: "/convocatoria",
-        },
-        {
-            title: "NOTICIAS",
-            url: noticias,
-            href: "/noticias",
-        },
-
-        {
-            title: "TRAYECTORIA",
-            url: trayectoria,
-            href: "/trayectoria",
-        },
-        {
-            title: "CONTACTO",
-            url: contacto,
-            href: "/contacto",
-        },
+        }
     ];
 
 
@@ -59,9 +77,30 @@ function NavBarMenu({ isNavBar }) {
                         <a className={`nav-link ${incSize ? "fs-5" : ""}`} href={menu.href}>
                             {menu.title}
                         </a>
+
                     </li>
                 ))}
-            </ul>
+                <li className="nav-item">
+                    <a onClick={handleSnackBar} className={`nav-link ${incSize ? "fs-5" : ""}`}>
+                        NOTICIAS
+                    </a>
+                </li>
+                <li className="nav-item">
+
+                    <a onClick={handleSnackBar} className={`nav-link ${incSize ? "fs-5" : ""}`}>
+                        TRAYECTORIA
+                    </a>
+
+                </li>
+
+                <li className="nav-item">
+                    <a onClick={handleSnackBar} className={`nav-link ${incSize ? "fs-5" : ""}`} to="/contacto">
+                        CONTACTO
+                    </a>
+                </li>
+                
+            </ul >
+
         )
     }
 
@@ -69,6 +108,7 @@ function NavBarMenu({ isNavBar }) {
         <ul className="navbar-nav gap-1" id="navbar-nav" >
             {
                 menuArray.map((menu) => (
+
                     <li className="nav-item" key={menu.title}>
                         <OverlayTrigger
                             trigger="hover"
@@ -85,8 +125,63 @@ function NavBarMenu({ isNavBar }) {
                             </NavLink>
                         </OverlayTrigger>
                     </li>
+
+
                 ))
             }
+
+            <li className="nav-item">
+                <OverlayTrigger
+                    trigger="hover"
+                    key="NOTICIAS"
+                    placement="bottom"
+                    overlay={
+                        <Popover id="NOTICIAS">
+                            <video src={noticias} width="200" autoPlay></video>
+                        </Popover>
+                    }
+                >
+                    <a onClick={handleSnackBar} className={`nav-link ${incSize ? "fs-5" : ""}`}>
+                        NOTICIAS
+                    </a>
+                </OverlayTrigger>
+
+            </li>
+            <li className="nav-item">
+                <OverlayTrigger
+                    trigger="hover"
+                    key="Trayectoria"
+                    placement="bottom"
+                    overlay={
+                        <Popover id="Trayectoria">
+                            <video src={trayectoria} width="200" autoPlay></video>
+                        </Popover>
+                    }
+                >
+                    <a onClick={handleSnackBar} className={`nav-link ${incSize ? "fs-5" : ""}`}>
+                        TRAYECTORIA
+                    </a>
+                </OverlayTrigger>
+
+            </li>
+
+            <li className="nav-item">
+                <OverlayTrigger
+                    trigger="hover"
+                    key="contacto"
+                    placement="bottom"
+                    overlay={
+                        <Popover id="contacto">
+                            <video src={contacto} width="200" autoPlay></video>
+                        </Popover>
+                    }
+                >
+                    <a onClick={handleSnackBar} className={`nav-link ${incSize ? "fs-5" : ""}`}>
+                        CONTACTO
+                    </a>
+                </OverlayTrigger>
+                <ToastContainer />
+            </li>
         </ul>
     )
 }
