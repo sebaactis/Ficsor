@@ -43,7 +43,7 @@ const SobreNosotros = () => {
                     <div>
                         <article className="areasGrid row">
 
-                            <div className="col-4">
+                            <div className="col-lg-4 col-xs-12">
 
                                 <h5 className={`titleEquipo fw-bold ${incSize ? "fs-4" : "fs-5"}`}>Área Comunicación </h5>
                                 <p className={`parrafoNamesEquipo  ${incSize ? "fs-5" : "fs-6"}`}>Row Propato</p>
@@ -71,7 +71,7 @@ const SobreNosotros = () => {
 
                             </div>
 
-                            <div className="col-4">
+                            <div className="col-lg-4 col-xs-12">
 
                                 <h5 className={`titleEquipo2 fw-bold ${incSize ? "fs-4" : "fs-5"}`}>Responsable de INCAA </h5>
                                 <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Mariana Rosselli</p>
@@ -87,7 +87,7 @@ const SobreNosotros = () => {
                                 <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Federico Sykes</p>
 
                             </div>
-                            <div className="col-4">
+                            <div className="col-lg-4 col-xs-12">
 
                                 <h5 className={`titleEquipo2 fw-bold ${incSize ? "fs-4" : "fs-5"}`}>Área Diseño Gráfico </h5>
                                 <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Studio Flova</p>
@@ -106,7 +106,7 @@ const SobreNosotros = () => {
                         <div className="separador"></div>
 
                         <article className="mailsGrid row">
-                            <div className="col-6">
+                            <div className="col-lg-6 col-xs-12">
                                 <h5 className="titleMails fw-bold">
                                     Mails Institucionales
                                 </h5>
@@ -117,7 +117,7 @@ const SobreNosotros = () => {
                                 <p className="parrafoMails mt-5"> <span className="fw-bold">Interpretes FiCSor:</span> interpretes@ficsor.com.ar </p>
                                 <p className="parrafoMails"> <span className="fw-bold">Traducción Audiovisual:</span> tav@ficsor.com.ar </p>
                             </div>
-                            <div className="col-6">
+                            <div className="col-lg-6 col-xs-12 ">
                                 <p className="parrafoMails"> <span className="fw-bold">Comunicación:</span> comunicacion@ficsor.com.ar </p>
                                 <p className="parrafoMails"> <span className="fw-bold">Donaciones:</span> donaciones@ficsor.com.ar </p>
                                 <p className="parrafoMails mt-5"> <span className="fw-bold">Escuelas:</span> escuelas@ficsor.com.ar //<br></br> escuelasficsor@gmail.com </p>

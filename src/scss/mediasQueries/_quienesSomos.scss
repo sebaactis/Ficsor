@@ -1,0 +1,47 @@
+@media (width <= 768px) {
+    main {
+        .quienesSomos {
+
+            margin-left: 0rem;
+
+            .titleQuienesSomosDiv {
+
+                padding-top: 6rem;
+                max-width: 100%;
+                margin-left: 5rem;
+            }
+        }
+
+        .equipoArticle {
+
+            div {
+                .titleEquipo2 {
+                    margin-left: 3rem;
+                    
+                }
+
+                .imgEquipo {
+                    margin-left: 0rem;
+                    max-width: 100%;
+                    
+                }
+
+                .parrafoEquipo {
+                    margin-right: 0rem;
+
+                }
+
+                .parrafoNamesEquipo2 {
+                    margin-left: 3rem;
+                    
+                }
+
+            }
+
+            .separador {
+                margin-right: 0rem;
+            }
+
+        }
+    }
+}
