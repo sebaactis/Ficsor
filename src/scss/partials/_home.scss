@@ -79,13 +79,28 @@
                         background-color: $light-blue;
                         border: 2px solid $light-blue;
                         border-radius: 8px;
-                        padding: 0.5rem 2rem;
+                        padding: 0.5rem 2.6rem;
+                    }
+
+                    .donacionesBtn:hover {
+                        background-color: transparent;
+                        color: $light-blue;
                     }
 
                     .convocatoriaBtn {
-                        @extend .donacionesBtn;
+                        
                         color: $light-blue;
                         background-color: transparent;
+                        border: 2px solid $light-blue;
+                        border-radius: 8px;
+                        padding: 0.5rem 2rem;
+                        font-weight: bold;
+                    }
+
+                    .convocatoriaBtn:hover {
+                        background-color: #0d657d;
+                        border-color: #0d657d;
+                        color: white;
                     }
                 }
             }

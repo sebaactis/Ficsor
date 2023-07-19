@@ -150,7 +150,7 @@ const Convocatoria = () => {
                 <div className="container buttonConvocatoriaDiv">
                     <a className="linksButtons" href="https://docs.google.com/file/d/1jRAB5h8fL49O8vASVpLHyBlDKPmSfJ8f/edit?filetype=msword" target="_blank">
                         <button className="buttonConvocatoria2">
-                            <AiOutlineDownload color={"#C11C70"} className="fs-2" />
+                            <AiOutlineDownload color={"#C11C70"} className="fs-2 fw-bold" />
                             <p>DESCARGAR</p>
                         </button>
                     </a>

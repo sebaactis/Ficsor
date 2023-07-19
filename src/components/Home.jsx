@@ -42,6 +42,7 @@ const Home = () => {
                 <div className="spacer"></div>
                 <div className="mainHome">
                     <div className="row justify-content-around w-100">
+                        
                         <article className="col-lg-12 col-xl-4 mb-4">
                             <div className="pContainer">
                                 <h1 className={`mainHomeTitle fw-bold mb-4 text-start ${incSize ? "fs-1" : ""}`}>
@@ -107,12 +108,12 @@ const Home = () => {
                                 <div className="container px-1 py-3">
                                     <div className="buttonVideoContainer d-grid gap-5 d-sm-flex justify-content-sm-end ">
                                         <NavLink to="/convocatoria">
-                                            <button className={`convocatoriaBtn btn w-100 ${incSize ? "btn-lg" : ""}`}>
+                                            <button className={`convocatoriaBtn w-100 ${incSize ? "btn-lg" : ""}`}>
                                                 CONVOCATORIA
                                             </button>
                                         </NavLink>
                                         <a href="https://cafecito.app/ficsor" target="_blank">
-                                            <button className={`donacionesBtn btn w-100 ${incSize ? "btn-lg" : ""}`}>
+                                            <button className={`donacionesBtn w-100 ${incSize ? "btn-lg" : ""}`}>
                                                 DONACIONES
                                             </button>
                                         </a>
