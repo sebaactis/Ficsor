@@ -47,7 +47,7 @@ const Home = () => {
                                 <h1 className={`mainHomeTitle fw-bold mb-4 text-start ${incSize ? "fs-1" : ""}`}>
                                     ¿Qué es el FiCSor?
                                 </h1>
-                                <p className={` ${incSize ? "fs-3" : "fs-4"}`}>
+                                <p className={` ${incSize ? "fs-3" : "fs-5"}`}>
                                     El Festival Internacional de Cine Sordo de Argentina (FICSOR) es el primer festival
                                     de cine pensado y organizado por personas Sordas y oyentes en Argentina. Tiene como
                                     objetivo promover el cine realizado por y para personas Sordas, así como dar a

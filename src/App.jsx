@@ -1,5 +1,4 @@
-import { createBrowserRouter, RouterProvider, BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "react-toastify/dist/ReactToastify.css";
 import "./scss/main.scss";

@@ -50,14 +50,16 @@ main {
                     }
                 }
 
+                
+
                 .seccionesParrafos1 {
                     margin-left: 4rem;
                     border-left: 3px solid #8cc63f;
                     margin-bottom: 2rem;
+                    
 
                     p {
                         margin-left: 0.5rem;
-                        font-weight: bolder;
                     }
                 }
 
@@ -68,7 +70,7 @@ main {
 
                     p {
                         margin-left: 0.5rem;
-                        font-weight: bolder;
+                        
                     }
                 }
 
@@ -79,7 +81,7 @@ main {
 
                     p {
                         margin-left: 0.5rem;
-                        font-weight: bolder;
+                        
                     }
                 }
 
@@ -90,7 +92,7 @@ main {
 
                     p {
                         margin-left: 0.5rem;
-                        font-weight: bolder;
+                        
                     }
                 }
 
@@ -101,7 +103,7 @@ main {
 
                     p {
                         margin-left: 0.5rem;
-                        font-weight: bolder;
+                        
                     }
                 }
 
@@ -112,16 +114,31 @@ main {
 
                     p {
                         margin-left: 0.5rem;
-                        font-weight: bolder;
+                        
                     }
                 }
             }
         }
     }
 
+    .seccionSuerte {
+        border: 2px solid #C11C70;
+        border-radius: 5px;
+        width: 80%;
+        margin: auto;
+        margin-top: 2rem;
+
+        .seccionSuerteParrafo {
+            color: #C11C70;
+            text-align: center;
+            padding-top: 1rem;
+        }
+    }
+
     .buttonConvocatoriaDiv {
         display: flex;
         justify-content: end;
+        margin-left: 2.2rem;
 
         .linksButtons {
             text-decoration: none;

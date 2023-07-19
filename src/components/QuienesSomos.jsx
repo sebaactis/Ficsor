@@ -16,7 +16,7 @@ const SobreNosotros = () => {
 
                 <article className="container equipoArticle">
                     <div>
-                        <h5 className={`titleEquipo fw-bold ${incSize ? "fs-4" : "fs-5"}`}>Presentacion del equipo </h5>
+                        <h5 className={`titleEquipo fw-bold ${incSize ? "fs-4" : "fs-5"}`}>Presentación del equipo </h5>
                         <p className={`parrafoEquipo fw-bold ${incSize ? "fs-4" : "fs-5"}`}>FICSOR 2023</p>
                         <img className="imgEquipo" src={equipo} />
                     </div>
