@@ -1,66 +1,3 @@
-// .main {
-//     background-color: $blue;
-//     padding: 3rem 0;
-
-//     .mainHome {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-
-//         div {
-//             article {
-//                 .pContainer {
-//                     padding: 2rem;
-//                     width: 60%;
-//                     margin: auto;
-
-//                     p {
-//                         color: white;
-//                     }
-//                 }
-
-//                 .buttonsDiv {
-//                     padding: 2rem;
-
-//                     .buttonVideoContainer {
-//                         .donacionesBtn {
-//                             color: white;
-//                             font-weight: bold;
-//                             background-color: $light-blue;
-//                             border: 2px solid $light-blue;
-//                             border-radius: 8px;
-//                             padding: 0.313rem 2.188rem;
-//                         }
-
-//                         .convocatoriaBtn {
-//                             @extend .donacionesBtn;
-//                             color: $light-blue;
-//                             background-color: transparent;
-//                         }
-//                     }
-//                 }
-
-//                 .mainHomeTitle {
-//                     text-align: center;
-//                     font-size: 2.25rem;
-//                     padding: 2rem 0;
-//                     color: white;
-//                 }
-
-//                 .buttonMain {
-//                     margin: 2rem 0;
-//                     padding: 0.3rem 1rem;
-//                     font-size: 1.3rem;
-//                     font-weight: bold;
-//                     color: $blue;
-//                     border-radius: 10px;
-//                     border-color: white;
-//                 }
-//             }
-//         }
-//     }
-// }
-
 .main {
     background-color: $blue;
 
@@ -133,6 +70,9 @@
                 }
 
                 .buttonVideoContainer {
+
+                    
+
                     .donacionesBtn {
                         color: white;
                         font-weight: bold;

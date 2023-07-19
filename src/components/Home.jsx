@@ -55,7 +55,7 @@ const Home = () => {
                                 </p>
                                 <div
                                     id="wrapper"
-                                    className={`wrapper ${incSize ? "fs-3" : "fs-4"} ${isExpanded ? "expanded" : "collapsed"
+                                    className={`wrapper ${incSize ? "fs-3" : "fs-5"} ${isExpanded ? "expanded" : "collapsed"
                                         }`}
                                     style={{ height: isExpanded ? "auto" : 0, overflow: "hidden" }}
                                 >
@@ -104,7 +104,7 @@ const Home = () => {
                                     allowfullscreen
                                     className="video1"
                                 ></iframe>
-                                <div className="container px-3 py-3">
+                                <div className="container px-1 py-3">
                                     <div className="buttonVideoContainer d-grid gap-5 d-sm-flex justify-content-sm-end ">
                                         <NavLink to="/convocatoria">
                                             <button className={`convocatoriaBtn btn w-100 ${incSize ? "btn-lg" : ""}`}>
