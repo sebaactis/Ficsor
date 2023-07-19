@@ -231,14 +231,57 @@
     }
 }
 
-.avalesTitle {
-    color: #f8c014;
+.avalesSection {
+
+    article {
+
+        div {
+            .incaa {
+                width: 50%;
+                margin-left: 18rem;
+            }
+
+            div {
+                .aval-img-color, .aval-img-nocolor {
+                    width: 50%;
+                }
+            }
+
+            div {
+               
+                div {
+
+                    .espanaDiv {
+                        
+                        .aval-img-color, .aval-img-nocolor {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+
+            div {
+                .ibero {
+                    width: 35%;
+                    margin-bottom: 1rem;
+                    margin-right: 12rem;
+                }
+            }
+        }
+    }
+
+    .avalesTitle {
+        color: #f8c014;
+    }
+    
+    .aval-img-color {
+        opacity: 0;
+    }
+    
+    .aval-img-color:hover {
+        opacity: 1;
+    }
+    
 }
 
-.aval-img-color {
-    opacity: 0;
-}
-
-.aval-img-color:hover {
-    opacity: 1;
-}

@@ -42,7 +42,6 @@ const Home = () => {
                 <div className="spacer"></div>
                 <div className="mainHome">
                     <div className="row justify-content-around w-100">
-                        
                         <article className="col-lg-12 col-xl-4 mb-4">
                             <div className="pContainer">
                                 <h1 className={`mainHomeTitle fw-bold mb-4 text-start ${incSize ? "fs-1" : ""}`}>
@@ -200,31 +199,31 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="container pb-4">
+            <section className="avalesSection container pb-4">
                 <h2 className={`text-center avalesTitle fw-bold py-5 ${incSize ? "fs-2" : "fs-3"}`}>Nuestros Avales</h2>
 
-                <article className="container d-grid gap-4">
+                <article className="container d-grid gap-5">
                     <div className="row text-center ">
-                        <img src={avalIncaa} />
+                        <img className="incaa" src={avalIncaa} />
                     </div>
 
                     <div className="row text-center">
                         <div className="position-relative">
-                            <img className="w-100 position-absolute aval-img-color" src={avalTecnoColor} />
-                            <img className="w-100" src={avalTecno} />
+                            <img className="position-absolute aval-img-color" src={avalTecnoColor} />
+                            <img className="aval-img-nocolor" src={avalTecno} />
                         </div>
                     </div>
 
                     <div className="row text-center">
                         <div className="col-lg-8 col-sm-12 align-self-center mb-3">
-                            <div className="position-relative">
-                                <img className="w-100 position-absolute aval-img-color" src={avalEspanaColor} />
-                                <img className="w-100" src={avalEspana} />
+                            <div className="espanaDiv position-relative">
+                                <img className="position-absolute aval-img-color" src={avalEspanaColor} />
+                                <img className="aval-img-nocolor" src={avalEspana} />
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-sm-12">
-                            <img src={avalIbero} />
+                            <img className="ibero" src={avalIbero} />
                         </div>
                     </div>
                 </article>
