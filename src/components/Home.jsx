@@ -1,6 +1,7 @@
 import { IoIosArrowForward } from "react-icons/io";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { useState } from "react";
 
 import { useAccContext } from "../context/AccContext";
 import instagram from "../assets/images/instagram.png";
@@ -18,6 +19,7 @@ import avalEspana from "../assets/images/avalEspana.png";
 import avalIbero from "../assets/images/avalIbero.png";
 import avalTecnoColor from "../assets/images/avalTecnoColor.png";
 import avalEspanaColor from "../assets/images/avalEspanaColor.png";
+import CaretDownFill from "../icons/CaretDownFill";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -28,33 +30,93 @@ import { NavLink } from "react-router-dom";
 const Home = () => {
     const { incSize } = useAccContext();
 
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const toggleWrapper = () => {
+        setIsExpanded((prevState) => !prevState);
+    };
+
     return (
-        <main>
+        <main className="py-0">
             <section className="main pb-3">
+                <div className="spacer"></div>
                 <div className="mainHome">
-                    <div className="row d-flex justify-content-around">
-                        <article className="col-lg-8 col-xl-8 col-md-12 col-xs-12">
-                            <div className="pContainer ">
-                                <h1 className={`mainHomeTitle fw-bold ${incSize ? "fs-1" : ""}`}>¿Qué es el FiCSor?</h1>
-                                <p className={` ${incSize ? "fs-4" : "fs-5"}`}>
-                                    El FiCSor es el primer festival de cine pensado y organizado por personas sordas en
-                                    Argentina, y la primera plataforma de exhibición de películas de temática sorda
-                                    nacionales e internacionales en el país. Su objetivo es, a través del cine, defender
-                                    y reconocer los derechos sociales, culturales y lingüísticos de la comunidad sorda.
+                    <div className="row justify-content-around w-100">
+                        <article className="col-lg-12 col-xl-4 mb-4">
+                            <div className="pContainer">
+                                <h1 className={`mainHomeTitle fw-bold mb-4 text-start ${incSize ? "fs-1" : ""}`}>
+                                    ¿Qué es el FiCSor?
+                                </h1>
+                                <p className={` ${incSize ? "fs-3" : "fs-4"}`}>
+                                    El Festival Internacional de Cine Sordo de Argentina (FICSOR) es el primer festival
+                                    de cine pensado y organizado por personas Sordas y oyentes en Argentina. Tiene como
+                                    objetivo promover el cine realizado por y para personas Sordas, así como dar a
+                                    conocer la cultura y la identidad Sorda.
                                 </p>
+                                <div
+                                    id="wrapper"
+                                    className={`wrapper ${incSize ? "fs-3" : "fs-4"} ${isExpanded ? "expanded" : "collapsed"
+                                        }`}
+                                    style={{ height: isExpanded ? "auto" : 0, overflow: "hidden" }}
+                                >
+                                    <p>
+                                        El FICSOR presenta una selección de películas de temática Sorda nacionales e
+                                        internacionales, así como talleres, conferencias y otras actividades culturales.
+                                        El festival también cuenta con una sección competitiva, en la que se premian las
+                                        mejores películas en las categorías de cortometrajes, mediometrajes y
+                                        largometrajes.
+                                    </p>
+
+                                    <p>
+                                        El FICSOR es un evento importante para la comunidad Sorda de Argentina y de todo
+                                        el mundo. Es una oportunidad para que las personas Sordas puedan ver películas
+                                        que reflejen sus experiencias y su cultura, y para que puedan aprender más sobre
+                                        la comunidad Sorda. El festival también es una oportunidad para que las personas
+                                        oyentes puedan conocer la cultura Sorda y aprender sobre la lengua de señas.
+                                    </p>
+
+                                    <p>
+                                        El FICSOR es un evento que celebra la diversidad y la inclusión. Es una
+                                        oportunidad para que las personas Sordas puedan compartir su arte y su cultura
+                                        con el mundo, y para que las personas oyentes puedan aprender más sobre la
+                                        comunidad Sorda.
+                                    </p>
+                                </div>
+                                <button
+                                    onClick={toggleWrapper}
+                                    id="btn-masinfo"
+                                    className="fs-5 badge rounded-pill masInfoBtn d-flex"
+                                >
+                                    {isExpanded ? "Menos Info" : "Más Info"}
+                                    <div className={`px-2 ${isExpanded ? "rotate" : " "}`}>
+                                        <CaretDownFill />
+                                    </div>
+                                </button>
                             </div>
-                            <div className="container buttonsDiv">
-                                <div className="buttonVideoContainer d-grid gap-5 d-sm-flex justify-content-sm-center ">
-                                    <NavLink to="/convocatoria">
-                                        <button className={`convocatoriaBtn btn ${incSize ? "btn-lg" : ""}`}>
-                                            CONVOCATORIA
-                                        </button>
-                                    </NavLink>
-                                    <a href="https://cafecito.app/ficsor" target="_blank">
-                                        <button className={`donacionesBtn btn ${incSize ? "btn-lg" : ""}`}>
-                                            DONACIONES
-                                        </button>
-                                    </a>
+                        </article>
+                        <article className="mainVideoButtons col-lg-12 col-xl-7 px-0 justify-content-start">
+                            <div className="videoContainer px-0">
+                                <iframe
+                                    src="https://www.youtube.com/embed/PE2qlsxz43A"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                    className="video1"
+                                ></iframe>
+                                <div className="container px-3 py-3">
+                                    <div className="buttonVideoContainer d-grid gap-5 d-sm-flex justify-content-sm-end ">
+                                        <NavLink to="/convocatoria">
+                                            <button className={`convocatoriaBtn btn w-100 ${incSize ? "btn-lg" : ""}`}>
+                                                CONVOCATORIA
+                                            </button>
+                                        </NavLink>
+                                        <a href="https://cafecito.app/ficsor" target="_blank">
+                                            <button className={`donacionesBtn btn w-100 ${incSize ? "btn-lg" : ""}`}>
+                                                DONACIONES
+                                            </button>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </article>
@@ -109,11 +171,11 @@ const Home = () => {
                 </article>
             </section>
 
-            <section className="carouselSection py-4">
+            <section className="carouselSection py-4 px-0">
                 <h2 className={`text-center text-white py-3 my-5 fw-bold ${incSize ? "fs-2" : "fs-3"}`}>
                     Ediciones anteriores
                 </h2>
-                <div className="container text-center px-0 carouselDiv">
+                <div className="container text-center carouselDiv px-0">
                     <Swiper
                         modules={[Navigation, Pagination, Scrollbar, A11y]}
                         spaceBetween={40}
@@ -137,50 +199,31 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* <section className="avalesSection">
-                <h2 className={`text-center avalesTitle fw-bold py-5 ${incSize ? "fs-2" : "fs-3"}`}>Nuestros Avales</h2>
-                <article className="avalesDiv">
-                    <div>
-                        <img src={avalIncaa} />
-                    </div>
-                    <div className="tecnoDiv">
-                        <img className="base-image" src={avalTecno} />
-                        <img className="hover-image" src={avalTecnoColor} />
-                    </div>
-                    <div className="d-flex align-items-center gap-5">
-                        <div className="espanaDiv">
-                            <img className="base-image" src={avalEspana} />
-                            <img className="hover-image" src={avalEspanaColor} />
-                        </div>
-                        <img src={avalIbero} />
-                    </div>
-                </article>
-            </section> */}
-            <section>
+            <section className="container pb-4">
                 <h2 className={`text-center avalesTitle fw-bold py-5 ${incSize ? "fs-2" : "fs-3"}`}>Nuestros Avales</h2>
 
-                <article className="container d-grid gap-5">
-                    <div className="text-center my-auto">
-                        <img className="w-75 ms-2"src={avalIncaa} />
+                <article className="container d-grid gap-4">
+                    <div className="row text-center ">
+                        <img src={avalIncaa} />
                     </div>
 
                     <div className="row text-center">
                         <div className="position-relative">
-                            <img className="w-75 position-absolute aval-img-color" src={avalTecnoColor} />
-                            <img className="w-75" src={avalTecno} />
+                            <img className="w-100 position-absolute aval-img-color" src={avalTecnoColor} />
+                            <img className="w-100" src={avalTecno} />
                         </div>
                     </div>
 
                     <div className="row text-center">
-                        <div className="col-lg-8 col-sm-12 align-self-center">
+                        <div className="col-lg-8 col-sm-12 align-self-center mb-3">
                             <div className="position-relative">
-                                <img className="w-75 position-absolute aval-img-color" src={avalEspanaColor} />
-                                <img className="w-75" src={avalEspana} />
+                                <img className="w-100 position-absolute aval-img-color" src={avalEspanaColor} />
+                                <img className="w-100" src={avalEspana} />
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-sm-12">
-                            <img className="aval-ibero" src={avalIbero} />
+                            <img src={avalIbero} />
                         </div>
                     </div>
                 </article>

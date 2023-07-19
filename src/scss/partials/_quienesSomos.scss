@@ -2,21 +2,18 @@ main {
     background-color: $blue;
 
     .quienesSomos {
-
         margin-left: 10rem;
 
         .titleQuienesSomosDiv {
-
             display: flex;
             padding-bottom: 1rem;
-            width: 100%;
+            // width: 100%;
             margin-left: 10rem;
             padding: 2rem 0rem;
 
             .titleQuienesSomos {
                 color: white;
             }
-
         }
     }
 
@@ -39,9 +36,9 @@ main {
             .parrafoEquipo {
                 margin-left: 3rem;
                 max-width: 78%;
-                border-bottom: 2px solid #F8C014;
+                border-bottom: 2px solid #f8c014;
                 margin-right: 15rem;
-                color: #F8C014;
+                color: #f8c014;
             }
 
             .imgEquipo {
@@ -51,12 +48,12 @@ main {
 
             .parrafoNamesEquipo {
                 margin-left: 3rem;
-                color: white
+                color: white;
             }
 
             .parrafoNamesEquipo2 {
                 margin-left: 1rem;
-                color: white
+                color: white;
             }
 
             .areasGrid {
@@ -67,7 +64,7 @@ main {
                 margin-top: 1.5rem;
 
                 .titleMails {
-                    color: #F8C014;
+                    color: #f8c014;
                     margin-left: 3rem;
                 }
 
@@ -85,6 +82,5 @@ main {
             margin-right: 10rem;
             margin-left: 3rem;
         }
-
     }
 }

@@ -29,7 +29,7 @@
     }
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
     .main {
         .mainHome {
             div {
@@ -37,9 +37,9 @@
                     .container {
                         max-width: 100%;
 
-                        .video1 {
-                            width: 20rem;
-                        }
+                        // .video1 {
+                        //     width: 20rem;
+                        // }
 
                         // .buttonsDiv {
 
@@ -50,8 +50,23 @@
         }
     }
 
+
     .aval-ibero {
         width: 6rem;
         margin-top: 2rem;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            background-color: transparent !important;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            text-shadow:
+                1px 1px 2px black,
+                0 0 1em rgb(255, 255, 255);
+
+        }
     }
+
 }
