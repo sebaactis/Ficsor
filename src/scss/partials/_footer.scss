@@ -1,28 +1,23 @@
 .footer {
-    background-color: #259DB7;
+    background-color: #259db7;
     padding: 3rem 0;
 
     .footerDiv {
-
-
         .sectionLogo {
-
             .logoContactDiv {
                 width: 30%;
-                margin-left: 200px;
+                // margin-left: 200px;
                 gap: 2rem;
 
                 .logowhite {
-                    width: 170px
+                    max-width: 170px;
                 }
 
                 .logoContactoSpace {
                     border-left: 2px white solid;
-                    margin-left: 10px;
+                    // margin-left: 10px;
                     font-weight: bold;
                     height: 60px;
-
-
 
                     .contactoFooterTitle {
                         margin-left: 10px;
@@ -34,54 +29,45 @@
                         color: white;
                     }
                 }
-
-
             }
         }
 
         .rowButtonDiv {
-
-            margin-right: 10rem;
-            gap: 2rem;
-
+            // margin-right: 10rem;
+            // gap: 2rem;
 
             .buttonFooter {
                 color: white;
                 font-weight: bold;
-                padding: 1.5rem 3rem;
+                // padding: 1.5rem 3rem;
                 background-color: #04809a;
                 border: 2px solid #04809a;
                 border-radius: 8px;
-                margin-top: 2rem;
+                // margin-top: 2rem;
             }
 
-            img {
-                margin-top: 1rem;
-            }
+            // img {
+            //     margin-top: 1rem;
+            // }
         }
-
-
-
 
         .navFooterDiv {
             nav {
-                background-color: #259DB7 !important;
-                padding: 0;
+                background-color: #259db7 !important;
+                // padding: 0;
 
                 .container-fluid {
                     div {
                         .navFooter {
-                            display: flex;
+                            // display: flex;
                             flex-direction: column;
                             border-left: 2px white solid;
                             font-size: 0.9rem;
-                            margin-left: 10px;
+                            // margin-left: 10px;
                         }
                     }
                 }
             }
         }
-
     }
-
 }

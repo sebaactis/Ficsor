@@ -1,50 +1,110 @@
+// .main {
+//     background-color: $blue;
+//     padding: 3rem 0;
+
+//     .mainHome {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         div {
+//             article {
+//                 .pContainer {
+//                     padding: 2rem;
+//                     width: 60%;
+//                     margin: auto;
+
+//                     p {
+//                         color: white;
+//                     }
+//                 }
+
+//                 .buttonsDiv {
+//                     padding: 2rem;
+
+//                     .buttonVideoContainer {
+//                         .donacionesBtn {
+//                             color: white;
+//                             font-weight: bold;
+//                             background-color: $light-blue;
+//                             border: 2px solid $light-blue;
+//                             border-radius: 8px;
+//                             padding: 0.313rem 2.188rem;
+//                         }
+
+//                         .convocatoriaBtn {
+//                             @extend .donacionesBtn;
+//                             color: $light-blue;
+//                             background-color: transparent;
+//                         }
+//                     }
+//                 }
+
+//                 .mainHomeTitle {
+//                     text-align: center;
+//                     font-size: 2.25rem;
+//                     padding: 2rem 0;
+//                     color: white;
+//                 }
+
+//                 .buttonMain {
+//                     margin: 2rem 0;
+//                     padding: 0.3rem 1rem;
+//                     font-size: 1.3rem;
+//                     font-weight: bold;
+//                     color: $blue;
+//                     border-radius: 10px;
+//                     border-color: white;
+//                 }
+//             }
+//         }
+//     }
+// }
+
 .main {
     background-color: $blue;
-    padding: 3rem 0;
+
+    .spacer {
+        height: 7rem;
+        width: 100%;
+    }
 
     .mainHome {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
 
         div {
             article {
                 .pContainer {
-                    padding: 2rem;
-                    width: 60%;
-                    margin: auto;
+                    padding: 0 2rem;
+                    width: 100%;
+
+                    .mainHomeTitle {
+                        text-align: center;
+                        font-size: 2rem;
+                        color: white;
+                    }
 
                     p {
                         color: white;
                     }
-                }
 
-                .buttonsDiv {
-                    padding: 2rem;
-
-                    .buttonVideoContainer {
-                        .donacionesBtn {
-                            color: white;
-                            font-weight: bold;
-                            background-color: $light-blue;
-                            border: 2px solid $light-blue;
-                            border-radius: 8px;
-                            padding: 0.313rem 2.188rem;
-                        }
-
-                        .convocatoriaBtn {
-                            @extend .donacionesBtn;
-                            color: $light-blue;
-                            background-color: transparent;
-                        }
+                    .masInfoBtn {
+                        color: white;
+                        background-color: $magenta;
                     }
-                }
 
-                .mainHomeTitle {
-                    text-align: center;
-                    font-size: 2.25rem;
-                    padding: 2rem 0;
-                    color: white;
+                    .wrapper {
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.5s ease-out;
+                    }
+
+                    .wrapper.expanded {
+                        max-height: 2000px;
+                        transition: max-height 0.5s ease-out;
+                    }
                 }
 
                 .buttonMain {
@@ -57,8 +117,43 @@
                     border-color: white;
                 }
             }
+
+            .mainVideoButtons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                div {
+                    .video1 {
+                        height: 432px;
+                        width: 732px;
+                        max-width: 100%;
+                    }
+                }
+
+                .buttonVideoContainer {
+                    .donacionesBtn {
+                        color: white;
+                        font-weight: bold;
+                        background-color: $light-blue;
+                        border: 2px solid $light-blue;
+                        border-radius: 8px;
+                    }
+
+                    .convocatoriaBtn {
+                        @extend .donacionesBtn;
+                        color: $light-blue;
+                        background-color: transparent;
+                    }
+                }
+            }
         }
     }
+}
+
+.rotate {
+    transform: rotate(180deg);
 }
 
 .sectionFestival {
@@ -148,8 +243,14 @@
         .swiper-button-next,
         .swiper-button-prev {
             background-color: #f8c014;
-            padding: 1.8rem;
+            padding: 2.5rem;
             border-radius: 50%;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            padding: 1.5rem;
+            font-size: 3rem;
         }
 
         .swiper-pagination {
@@ -160,83 +261,18 @@
     }
 
     .carouselDiv {
-        .imgSlides {
-            width: 55rem;
+        display: flex;
+
+        img {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
             height: 100%;
+            object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo su relación de aspecto */
+            overflow: hidden;
         }
     }
 }
-
-// .avalesSection {
-//     background-color: #004254;
-//     padding: 1rem 0;
-
-//     .avalesTitle {
-//         color: #f8c014;
-//         margin-bottom: 5rem;
-//     }
-
-//     .avalesDiv {
-//         display: grid;
-//         grid-template-rows: 1fr 1fr 1fr;
-//         justify-items: center;
-//         gap: 2rem;
-
-//         .tecnoDiv {
-//             margin-right: 40rem;
-//             margin-bottom: 10rem;
-//             position: relative;
-
-//             .base-image {
-//                 position: absolute;
-//                 transition: opacity 0.3s ease-in-out;
-//             }
-
-//             .base-image:hover {
-//                 opacity: 0;
-//             }
-
-//             .hover-image {
-//                 position: absolute;
-//                 opacity: 0;
-
-//                 transition: opacity 0.3s ease-in-out;
-//             }
-
-//             .hover-image:hover {
-//                 opacity: 1;
-//             }
-//         }
-
-//         div {
-//             .espanaDiv {
-//                 position: relative;
-//                 margin-right: 45rem;
-//                 margin-bottom: 8rem;
-
-//                 .base-image {
-//                     position: absolute;
-//                     transition: opacity 0.3s ease-in-out;
-//                 }
-
-//                 .base-image:hover {
-//                     opacity: 0;
-//                 }
-
-//                 .hover-image {
-//                     position: absolute;
-//                     opacity: 0;
-
-//                     transition: opacity 0.3s ease-in-out;
-//                 }
-
-//                 .hover-image:hover {
-//                     opacity: 1;
-//                 }
-//             }
-//         }
-//     }
-// }
 
 .avalesTitle {
     color: #f8c014;

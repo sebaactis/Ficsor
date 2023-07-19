@@ -6,10 +6,9 @@ main {
         height: 100%;
 
         .titleConvocatoriaDiv {
-
             display: flex;
             padding-bottom: 1rem;
-            width: 100%;
+            // width: 100%;
             margin-left: 20rem;
             padding: 2rem 0rem;
 
@@ -17,7 +16,6 @@ main {
                 color: white;
             }
         }
-
 
         .convocatoriaBases {
             height: 100%;
@@ -34,9 +32,9 @@ main {
 
                 .parrafoBases {
                     margin-left: 3rem;
-                    border-bottom: 2px solid #C11C70;
+                    border-bottom: 2px solid #c11c70;
                     margin-right: 3rem;
-                    color: #C11C70;
+                    color: #c11c70;
                 }
 
                 .itemBasesTitle {
@@ -48,13 +46,13 @@ main {
                     margin-left: 3rem;
 
                     .infoSpan {
-                        color: #C11C70;
+                        color: #c11c70;
                     }
                 }
 
                 .seccionesParrafos1 {
                     margin-left: 4rem;
-                    border-left: 3px solid #8CC63F;
+                    border-left: 3px solid #8cc63f;
                     margin-bottom: 2rem;
 
                     p {
@@ -65,7 +63,7 @@ main {
 
                 .seccionesParrafos2 {
                     margin-left: 4rem;
-                    border-left: 3px solid #C11C70;
+                    border-left: 3px solid #c11c70;
                     margin-bottom: 2rem;
 
                     p {
@@ -76,7 +74,7 @@ main {
 
                 .seccionesParrafos3 {
                     margin-left: 4rem;
-                    border-left: 3px solid #07ABCB;
+                    border-left: 3px solid #07abcb;
                     margin-bottom: 2rem;
 
                     p {
@@ -87,7 +85,7 @@ main {
 
                 .seccionesParrafos4 {
                     margin-left: 4rem;
-                    border-left: 3px solid #F8C014;
+                    border-left: 3px solid #f8c014;
                     margin-bottom: 2rem;
 
                     p {
@@ -117,26 +115,23 @@ main {
                         font-weight: bolder;
                     }
                 }
-
             }
         }
     }
 
     .buttonConvocatoriaDiv {
-
         display: flex;
         justify-content: end;
 
         .linksButtons {
-
             text-decoration: none;
 
             .buttonConvocatoria {
                 padding: 0rem 1.6rem;
-                background-color: #C11C70;
+                background-color: #c11c70;
                 color: white;
                 font-weight: bold;
-                border: 1px solid #C11C70;
+                border: 1px solid #c11c70;
                 border-radius: 10px;
                 margin-right: 6rem;
                 margin-left: 2rem;
@@ -153,9 +148,9 @@ main {
             .buttonConvocatoria2 {
                 padding: 0rem 2.7rem;
                 background-color: transparent;
-                color: #C11C70;
+                color: #c11c70;
                 font-weight: bold;
-                border: 1px solid #C11C70;
+                border: 1px solid #c11c70;
                 border-radius: 10px;
                 margin-top: 2rem;
                 display: flex;
@@ -167,7 +162,5 @@ main {
                 }
             }
         }
-
-
     }
 }

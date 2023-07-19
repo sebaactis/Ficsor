@@ -67,18 +67,18 @@ function NavBarMenu({ isNavBar }) {
                         </a>
                     </li>
                 ))}
-                <li className="nav-item d-md-none">
+                <li className="nav-item d-none">
                     <a onClick={handleSnackBar} className={`nav-link ${incSize ? "fs-5" : ""}`}>
                         NOTICIAS
                     </a>
                 </li>
-                <li className="nav-item d-md-none">
+                <li className="nav-item d-none">
                     <a onClick={handleSnackBar} className={`nav-link ${incSize ? "fs-5" : ""}`}>
                         TRAYECTORIA
                     </a>
                 </li>
 
-                <li className="nav-item d-md-none">
+                <li className="nav-item d-none">
                     <a onClick={handleSnackBar} className={`nav-link ${incSize ? "fs-5" : ""}`} to="/contacto">
                         CONTACTO
                     </a>

@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider, BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 import "./scss/main.scss";
 import NavBar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
