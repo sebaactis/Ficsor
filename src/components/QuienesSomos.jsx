@@ -11,7 +11,7 @@ const SobreNosotros = () => {
             <section className="quienesSomos">
                 <div className="titleQuienesSomosDiv">
                     <IoIosArrowForward className="fs-2 arrow" color="#75AA43" />
-                    <h1 className={`titleQuienesSomos fw-bold ${incSize ? "fs-2" : "fs-3"}`}>Quienes Somos</h1>
+                    <h1 className={`titleQuienesSomos fw-bold ${incSize ? "fs-2" : "fs-3"}`}>Quiénes Somos</h1>
                 </div>
 
                 <article className="container equipoArticle">
