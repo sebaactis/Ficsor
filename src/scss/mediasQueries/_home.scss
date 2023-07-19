@@ -69,4 +69,42 @@
         }
     }
 
+
+    .avalesSection {
+
+        article {
+            div {
+                .incaa {
+                    width: 100%;
+                    margin-left: 0rem;
+                }
+
+                div {
+                    .aval-img-color,
+                    .aval-img-nocolor {
+                        width: 100%;
+                    }
+                }
+
+                div {
+                    div {
+                        div {
+                            .aval-img-color, .aval-img-nocolor  {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                div {
+                    .ibero {
+                        width: 35%;
+                        margin-top: 1.5rem;
+                        margin-right: 0rem;
+                    }
+                }
+            }
+        }
+    }
+
 }

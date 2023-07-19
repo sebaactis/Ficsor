@@ -1,66 +1,3 @@
-// .main {
-//     background-color: $blue;
-//     padding: 3rem 0;
-
-//     .mainHome {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-
-//         div {
-//             article {
-//                 .pContainer {
-//                     padding: 2rem;
-//                     width: 60%;
-//                     margin: auto;
-
-//                     p {
-//                         color: white;
-//                     }
-//                 }
-
-//                 .buttonsDiv {
-//                     padding: 2rem;
-
-//                     .buttonVideoContainer {
-//                         .donacionesBtn {
-//                             color: white;
-//                             font-weight: bold;
-//                             background-color: $light-blue;
-//                             border: 2px solid $light-blue;
-//                             border-radius: 8px;
-//                             padding: 0.313rem 2.188rem;
-//                         }
-
-//                         .convocatoriaBtn {
-//                             @extend .donacionesBtn;
-//                             color: $light-blue;
-//                             background-color: transparent;
-//                         }
-//                     }
-//                 }
-
-//                 .mainHomeTitle {
-//                     text-align: center;
-//                     font-size: 2.25rem;
-//                     padding: 2rem 0;
-//                     color: white;
-//                 }
-
-//                 .buttonMain {
-//                     margin: 2rem 0;
-//                     padding: 0.3rem 1rem;
-//                     font-size: 1.3rem;
-//                     font-weight: bold;
-//                     color: $blue;
-//                     border-radius: 10px;
-//                     border-color: white;
-//                 }
-//             }
-//         }
-//     }
-// }
-
 .main {
     background-color: $blue;
 
@@ -133,18 +70,37 @@
                 }
 
                 .buttonVideoContainer {
+
+                    
+
                     .donacionesBtn {
                         color: white;
                         font-weight: bold;
                         background-color: $light-blue;
                         border: 2px solid $light-blue;
                         border-radius: 8px;
+                        padding: 0.5rem 2.6rem;
+                    }
+
+                    .donacionesBtn:hover {
+                        background-color: transparent;
+                        color: $light-blue;
                     }
 
                     .convocatoriaBtn {
-                        @extend .donacionesBtn;
+                        
                         color: $light-blue;
                         background-color: transparent;
+                        border: 2px solid $light-blue;
+                        border-radius: 8px;
+                        padding: 0.5rem 2rem;
+                        font-weight: bold;
+                    }
+
+                    .convocatoriaBtn:hover {
+                        background-color: #0d657d;
+                        border-color: #0d657d;
+                        color: white;
                     }
                 }
             }
@@ -181,7 +137,7 @@
         .titleFestivalDiv {
             display: flex;
             padding-bottom: 1rem;
-            width: 100%;
+            width: 80%;
 
             .titleFestival {
                 color: white;
@@ -191,7 +147,7 @@
         }
 
         .imgMask {
-            width: 100%;
+            width: 70%;
             z-index: 111;
         }
 
@@ -239,18 +195,19 @@
     .swiper {
         width: 100%;
         margin-bottom: 2rem;
+        border-radius: 10px;
 
         .swiper-button-next,
         .swiper-button-prev {
             background-color: #f8c014;
-            padding: 2.5rem;
+            padding: 2rem;
             border-radius: 50%;
         }
 
         .swiper-button-next::after,
         .swiper-button-prev::after {
-            padding: 1.5rem;
-            font-size: 3rem;
+            
+            font-size: 2.2rem;
         }
 
         .swiper-pagination {
@@ -274,14 +231,57 @@
     }
 }
 
-.avalesTitle {
-    color: #f8c014;
+.avalesSection {
+
+    article {
+
+        div {
+            .incaa {
+                width: 50%;
+                margin-left: 18rem;
+            }
+
+            div {
+                .aval-img-color, .aval-img-nocolor {
+                    width: 50%;
+                }
+            }
+
+            div {
+               
+                div {
+
+                    .espanaDiv {
+                        
+                        .aval-img-color, .aval-img-nocolor {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+
+            div {
+                .ibero {
+                    width: 35%;
+                    margin-bottom: 1rem;
+                    margin-right: 12rem;
+                }
+            }
+        }
+    }
+
+    .avalesTitle {
+        color: #f8c014;
+    }
+    
+    .aval-img-color {
+        opacity: 0;
+    }
+    
+    .aval-img-color:hover {
+        opacity: 1;
+    }
+    
 }
 
-.aval-img-color {
-    opacity: 0;
-}
-
-.aval-img-color:hover {
-    opacity: 1;
-}

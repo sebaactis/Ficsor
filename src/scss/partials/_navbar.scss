@@ -1,7 +1,7 @@
 .navBarStyle {
     padding: 10px 30px;
     background-color: #259db7;
-    font-size: 1.1rem;
+    font-size: 1rem;
 
     .container-fluid {
         a {
@@ -26,10 +26,13 @@
                 .nav-item {
                     margin: 0 0.3rem;
                     font-weight: bold;
+                    margin: 0 0.7rem;
 
                     .nav-link {
                         color: white;
                         position: relative;
+                        padding: 0.1rem 0;
+                        
 
                         &:hover {
                             color: #004254;
@@ -38,6 +41,8 @@
 
                     .active {
                         border-bottom: 2px solid white;
+                        padding: 0.1rem 0;
+                        
                     }
                 }
             }

@@ -29,12 +29,12 @@ function NavBarMenu({ isNavBar }) {
 
     const menuArray = [
         {
-            title: "HOME",
+            title: "INICIO",
             url: home,
             href: "/",
         },
         {
-            title: "QUIENES SOMOS",
+            title: "QUIÉNES SOMOS",
             url: sobreNosotros,
             href: "/sobrenosotros",
         },
