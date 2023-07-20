@@ -112,13 +112,17 @@ const SobreNosotros = () => {
                                 <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Studio Flova</p>
 
                                 <h5 className={`titleEquipo2 fw-bold ${incSize ? "fs-4" : "fs-5"}`}>
-                                    Área Diseño y Desarrollo Web{" "}
+                                    Área Diseño UX/UI - Alumnos Coderhouse{" "}
                                 </h5>
-                                <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Jénniffer Asad</p>
+                                <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Jennifer Assaad</p>
                                 <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Camila Beaux</p>
-                                <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Mauricio Encina</p>
-                                <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Sebastián Actis</p>
 
+                                <h5 className={`titleEquipo2 fw-bold ${incSize ? "fs-4" : "fs-5"}`}>
+                                    Área Desarrollo - Alumnos Coderhouse{" "}
+                                </h5>
+                                <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Sebastián Actis</p>
+                                <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Mauricio Encina</p>
+                                 
                                 <h5 className={`titleEquipo2 fw-bold ${incSize ? "fs-4" : "fs-5"}`}>Área Legal </h5>
                                 <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Carolina Uslenghi</p>
                             </div>

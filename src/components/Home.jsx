@@ -19,6 +19,7 @@ import avalEspana from "../assets/images/avalEspana.png";
 import avalIbero from "../assets/images/avalIbero.png";
 import avalTecnoColor from "../assets/images/avalTecnoColor.png";
 import avalEspanaColor from "../assets/images/avalEspanaColor.png";
+import brasilemba from "../assets/images/embajadabrasil.png";
 import guimaraes from "../assets/images/guimaraes.png";
 import CaretDownFill from "../icons/CaretDownFill";
 
@@ -232,7 +233,9 @@ const Home = () => {
                         </div>
                     </div>
 
-                    
+                    <div className="row text-center">
+                        <img className="brasilemba" src={brasilemba} />
+                    </div>
                 </article>
             </section>
         </main>
