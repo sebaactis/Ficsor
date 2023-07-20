@@ -19,6 +19,7 @@ import avalEspana from "../assets/images/avalEspana.png";
 import avalIbero from "../assets/images/avalIbero.png";
 import avalTecnoColor from "../assets/images/avalTecnoColor.png";
 import avalEspanaColor from "../assets/images/avalEspanaColor.png";
+import guimaraes from "../assets/images/guimaraes.png";
 import CaretDownFill from "../icons/CaretDownFill";
 
 import "swiper/css";
@@ -157,7 +158,7 @@ const Home = () => {
                         </a>
                     </div>
                     <div className="col-xs-12 col-sm-12 col-lg-4 d-flex justify-content-center justify-content-lg-center my-3">
-                        <a href="/">
+                        <a href="https://www.tiktok.com/@ficsor.arg?_t=8e8So0Dwti2&_r=1" target="_blank">
                             {" "}
                             <img className="iconSocial" src={tiktok} alt="logoTiktok" />{" "}
                         </a>
@@ -215,17 +216,23 @@ const Home = () => {
                     </div>
 
                     <div className="row text-center">
-                        <div className="col-lg-8 col-sm-12 align-self-center mb-3">
+                        <div className="col-lg-6 col-sm-12 align-self-center mb-3">
                             <div className="espanaDiv position-relative">
                                 <img className="position-absolute aval-img-color" src={avalEspanaColor} />
                                 <img className="aval-img-nocolor" src={avalEspana} />
                             </div>
                         </div>
 
-                        <div className="col-lg-4 col-sm-12">
+                        <div className="col-lg-3 col-sm-12">
                             <img className="ibero" src={avalIbero} />
                         </div>
+
+                        <div className="col-lg-3 col-sm-12">
+                            <img className="ibero" src={guimaraes} />
+                        </div>
                     </div>
+
+                    
                 </article>
             </section>
         </main>

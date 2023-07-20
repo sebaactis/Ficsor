@@ -74,7 +74,7 @@ const SobreNosotros = () => {
                                     Área Traducción Audiovisual{" "}
                                 </h5>
                                 <p className={`parrafoNamesEquipo  ${incSize ? "fs-5" : "fs-6"}`}>
-                                    Caive Carone Fernández 
+                                    Maive Carone Fernández 
                                 </p>
                                 <p className={`parrafoNamesEquipo  ${incSize ? "fs-5" : "fs-6"}`}>Martin Chamarro </p>
                                 <p className={`parrafoNamesEquipo  ${incSize ? "fs-5" : "fs-6"}`}>Alejandra Tolj </p>
@@ -114,7 +114,10 @@ const SobreNosotros = () => {
                                 <h5 className={`titleEquipo2 fw-bold ${incSize ? "fs-4" : "fs-5"}`}>
                                     Área Diseño y Desarrollo Web{" "}
                                 </h5>
-                                <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Coderhouse</p>
+                                <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Jénniffer Asad</p>
+                                <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Camila Beaux</p>
+                                <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Mauricio Encina</p>
+                                <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Sebastián Actis</p>
 
                                 <h5 className={`titleEquipo2 fw-bold ${incSize ? "fs-4" : "fs-5"}`}>Área Legal </h5>
                                 <p className={`parrafoNamesEquipo2 ${incSize ? "fs-5" : "fs-6"}`}>Carolina Uslenghi</p>
