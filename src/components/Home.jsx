@@ -204,7 +204,7 @@ const Home = () => {
             <section className="avalesSection container pb-4">
                 <h2 className={`text-center avalesTitle fw-bold py-5 ${incSize ? "fs-2" : "fs-3"}`}>Nuestros Avales</h2>
 
-                <article className="container d-grid gap-5">
+                <article className="container d-grid gap-4">
                     <div className="row text-center ">
                         <img className="incaa" src={avalIncaa} />
                     </div>
@@ -217,25 +217,31 @@ const Home = () => {
                     </div>
 
                     <div className="row text-center">
-                        <div className="col-lg-6 col-sm-12 align-self-center mb-3">
+                        <div className="col-lg-8 col-sm-12 align-self-center mb-3">
                             <div className="espanaDiv position-relative">
                                 <img className="position-absolute aval-img-color" src={avalEspanaColor} />
                                 <img className="aval-img-nocolor" src={avalEspana} />
                             </div>
                         </div>
 
-                        <div className="col-lg-3 col-sm-12">
+                        <div className="col-lg-4 col-sm-12">
                             <img className="ibero" src={avalIbero} />
                         </div>
 
-                        <div className="col-lg-3 col-sm-12">
-                            <img className="ibero" src={guimaraes} />
-                        </div>
+
                     </div>
 
                     <div className="row text-center">
-                        <img className="brasilemba" src={brasilemba} />
+                        <div className="col-lg-6">
+                            <img className="brasilemba" src={brasilemba} />
+                        </div>
+
+                        <div className="col-lg-6 col-sm-12">
+                            <img className="guimaraes" src={guimaraes} />
+                        </div>
                     </div>
+
+
                 </article>
             </section>
         </main>
