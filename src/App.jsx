@@ -23,10 +23,10 @@ function App() {
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/convocatoria" element={<Convocatoria />} />
-                    <Route exact path="/noticias" element={<Noticias />} />
+                    <Route exact path="/noticias" element={<ErrorPage />} />
                     <Route exact path="/sobrenosotros" element={<QuienesSomos />} />
-                    <Route exact path="/trayectoria" element={<Trayectoria />} />
-                    <Route exact path="/contacto" element={<Contacto />} />
+                    <Route exact path="/trayectoria" element={<ErrorPage />} />
+                    <Route exact path="/contacto" element={<ErrorPage />} />
                     <Route exact path="*" element={<ErrorPage />} />
                 </Routes>
                 <Footer />
