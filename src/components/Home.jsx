@@ -22,6 +22,7 @@ import avalEspanaColor from "../assets/images/avalEspanaColor.png";
 import bicentenario from "../assets/images/bicentenario.png"
 import brasilemba from "../assets/images/embajadabrasil.png";
 import guimaraes from "../assets/images/guimaraes.png";
+import ceacerca from "../assets/images/CEacerca.png";
 import CaretDownFill from "../icons/CaretDownFill";
 
 import "swiper/css";
@@ -205,7 +206,7 @@ const Home = () => {
             <section className="avalesSection container pb-4">
                 <h2 className={`text-center avalesTitle fw-bold py-5 ${incSize ? "fs-2" : "fs-3"}`}>Nuestros Avales</h2>
 
-                <article className="container d-grid gap-4">
+                <article className="container d-grid gap-5">
                     <div className="row text-center ">
                         <img className="incaa" src={avalIncaa} />
                     </div>
@@ -227,6 +228,10 @@ const Home = () => {
 
                         <div className="col-lg-4 col-sm-12">
                             <img className="ibero" src={avalIbero} />
+                        </div>
+
+                        <div className="row text-center">
+                            <img className="bicentenario" src={ceacerca} />
                         </div>
 
 
